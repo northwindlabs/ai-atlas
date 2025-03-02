@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="#003399" />
+  
+  <!-- Stylized M for Mistral -->
+  <path d="M50 60 L70 60 L85 100 L100 60 L115 100 L130 60 L150 60 L120 140 L100 100 L80 140 L50 60Z" fill="#FFFFFF" />
+  
+  <!-- Chat Bubble -->
+  <path d="M70 110 L70 140 L85 125 L130 125 C140 125 150 115 150 105 L150 90" stroke="#FFCC00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Wind/Air Element (for Mistral) -->
+  <path d="M40 80 Q60 70 80 80 Q100 90 120 80" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M50 90 Q70 80 90 90 Q110 100 130 90" stroke="#FFCC00" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg> 

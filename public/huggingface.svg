@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="#FFBD4F" />
+  
+  <!-- Hugging Face Logo (Simplified) -->
+  <circle cx="70" cy="80" r="12" fill="#FFFFFF" />
+  <circle cx="130" cy="80" r="12" fill="#FFFFFF" />
+  
+  <!-- Eyes -->
+  <circle cx="70" cy="80" r="6" fill="#000000" />
+  <circle cx="130" cy="80" r="6" fill="#000000" />
+  
+  <!-- Smile -->
+  <path d="M70 120 Q100 150 130 120" stroke="#000000" stroke-width="8" stroke-linecap="round" fill="none" />
+  
+  <!-- Arms -->
+  <path d="M40 100 Q30 120 40 140" stroke="#000000" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M160 100 Q170 120 160 140" stroke="#000000" stroke-width="8" stroke-linecap="round" fill="none" />
+</svg> 

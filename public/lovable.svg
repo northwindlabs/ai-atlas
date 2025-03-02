@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="#6A4C93" />
+  
+  <!-- Heart Shape -->
+  <path d="M100 150 L75 125 C50 100 50 75 75 60 C87.5 52.5 100 60 100 75 C100 60 112.5 52.5 125 60 C150 75 150 100 125 125 L100 150Z" fill="#FFFFFF" />
+  
+  <!-- Code Brackets -->
+  <path d="M70 90 L50 100 L70 110" stroke="#FFCC00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M130 90 L150 100 L130 110" stroke="#FFCC00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+</svg> 

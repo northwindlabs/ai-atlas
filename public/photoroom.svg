@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="#00A8A8" />
+  
+  <!-- Camera Lens -->
+  <circle cx="100" cy="100" r="40" fill="#FFFFFF" />
+  <circle cx="100" cy="100" r="30" fill="#00A8A8" />
+  <circle cx="100" cy="100" r="20" fill="#FFFFFF" />
+  
+  <!-- Camera Flash -->
+  <circle cx="140" cy="70" r="15" fill="#FFCC00" />
+  
+  <!-- Background Removal Element -->
+  <path d="M50 50 L60 50 L60 60 L50 60 Z" fill="none" stroke="#FFFFFF" stroke-width="4" />
+  <path d="M140 50 L150 50 L150 60 L140 60 Z" fill="none" stroke="#FFFFFF" stroke-width="4" />
+  <path d="M50 140 L60 140 L60 150 L50 150 Z" fill="none" stroke="#FFFFFF" stroke-width="4" />
+  <path d="M140 140 L150 140 L150 150 L140 150 Z" fill="none" stroke="#FFFFFF" stroke-width="4" />
+  
+  <!-- Dotted Selection Line -->
+  <rect x="40" y="40" width="120" height="120" rx="10" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10 5" fill="none" />
+</svg> 

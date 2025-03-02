@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#003399" />
+  
+  <!-- Atlas Figure (Stylized A) -->
+  <path d="M100 30 L140 150 L120 150 L110 125 L90 125 L80 150 L60 150 L100 30Z" fill="#FFCC00" />
+  <path d="M100 80 L110 110 L90 110 L100 80Z" fill="#003399" />
+  
+  <!-- Globe/Atlas Elements -->
+  <circle cx="100" cy="100" r="40" stroke="#FFCC00" stroke-width="4" stroke-dasharray="5 5" fill="none" />
+  <path d="M60 100 Q80 70 100 70 Q120 70 140 100 Q120 130 100 130 Q80 130 60 100Z" stroke="#FFCC00" stroke-width="2" fill="none" />
+  <path d="M100 60 L100 140" stroke="#FFCC00" stroke-width="2" />
+</svg> 
