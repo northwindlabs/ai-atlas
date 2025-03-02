@@ -5,10 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { categories } from "../data/services";
 
-// AI service data
-// const categories = [
-// ... existing code ...
-// ];
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
