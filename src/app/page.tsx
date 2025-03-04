@@ -220,7 +220,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 pt-6 border-t border-white/20 text-center text-sm text-white/60">
-            © {new Date().getFullYear()} AI Atlas. All rights reserved.
+            © {new Date().getFullYear()} AIAtlas • MIT Licensed • Contributions welcome
           </div>
         </div>
       </footer>
