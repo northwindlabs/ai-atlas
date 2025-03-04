@@ -103,6 +103,13 @@ export const categories: Category[] = [
         country: "🇩🇪",
         link: "https://endel.io/",
       },
+      {
+        name: "Klang.ai",
+        description: "Audio transcription of interviews & meeting notes",
+        icon: "🎯",
+        country: "🇸🇪",
+        link: "https://klang.ai",
+      },
     ],
   },
   {
