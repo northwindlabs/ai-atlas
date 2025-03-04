@@ -73,16 +73,16 @@ export default function Home() {
         <Link 
           href="https://github.com/northwindlabs/ai-atlas" 
           target="_blank"
-          className="dark:bg-white/10 rounded-lg px-4 py-2 hover:bg-black/20 dark:hover:bg-white/20 flex items-center gap-2 transition-colors"
+          className="dark:bg-white/10 bg-white/10 rounded-lg px-4 py-2 hover:bg-black/20 dark:hover:bg-white/20 flex items-center gap-2 transition-colors"
         >
            <Image
             src="/github-mark-white.svg"
             alt="GitHub"
             width={20}
             height={20}
-            className={`w-5 h-5 brightness-0 dark:brightness-100`}
+            className="w-5 h-5 invert-0"
        />
-          <span className="text-sm text-black dark:text-white">Contribute</span>
+          <span className="text-sm text-white dark:text-white">Contribute</span>
         </Link>
       </div>
       {/* Hero Section with Atlas-inspired header */}
