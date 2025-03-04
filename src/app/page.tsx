@@ -2,9 +2,60 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { categories } from "../data/services";
+import { useState, useEffect } from "react";
+import { categories, Service, Category } from "../data/services";
+import { getFaviconUrl } from "../utils/favicon";
 
+interface ServiceCardProps {
+  service: Service;
+  category: Category;
+}
+
+// ServiceCard component to handle favicon loading
+const ServiceCard = ({ service, category }: ServiceCardProps) => {
+  const [showEmoji, setShowEmoji] = useState(true);
+  const faviconUrl = getFaviconUrl(service.link);
+
+  return (
+    <Link 
+      href={service.link} 
+      key={service.name}
+      target="_blank"
+      className="atlas-card p-5 flex flex-col h-full"
+    >
+      <div className="flex items-start gap-4 mb-3">
+        <div className={`w-12 h-12 bg-white rounded-lg flex items-center justify-center text-white text-2xl relative`}>
+          {faviconUrl && (
+            <Image
+              src={faviconUrl}
+              alt={`${service.name} favicon`}
+              width={24}
+              height={24}
+              className="w-6 h-6 object-contain"
+              onError={() => setShowEmoji(true)}
+              onLoad={() => setShowEmoji(false)}
+            />
+          )}
+          {showEmoji && (
+            <span>{service.icon}</span>
+          )}
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold flex items-center gap-2">
+            {service.name}
+            <span className="text-base" title="Country of origin">{service.country}</span>
+          </h3>
+        </div>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 flex-grow">{service.description}</p>
+      <div className="mt-3 flex justify-end">
+        <span className="text-[var(--eu-blue)] dark:text-[var(--eu-yellow)] font-medium flex items-center gap-1">
+          Explore <span className="text-lg">→</span>
+        </span>
+      </div>
+    </Link>
+  );
+};
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -137,30 +188,11 @@ export default function Home() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {category.services.map((service) => (
-                    <Link 
-                      href={service.link} 
-                      key={service.name}
-                      target="_blank"
-                      className="atlas-card p-5 flex flex-col h-full"
-                    >
-                      <div className="flex items-start gap-4 mb-3">
-                        <div className={`w-12 h-12 ${category.color} rounded-lg flex items-center justify-center text-white text-2xl`}>
-                          <span>{service.icon}</span>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold flex items-center gap-2">
-                            {service.name}
-                            <span className="text-base" title="Country of origin">{service.country}</span>
-                          </h3>
-                        </div>
-                      </div>
-                      <p className="text-gray-600 dark:text-gray-400 flex-grow">{service.description}</p>
-                      <div className="mt-3 flex justify-end">
-                        <span className="text-[var(--eu-blue)] dark:text-[var(--eu-yellow)] font-medium flex items-center gap-1">
-                          Explore <span className="text-lg">→</span>
-                        </span>
-                      </div>
-                    </Link>
+                    <ServiceCard 
+                      key={service.name} 
+                      service={service} 
+                      category={category}
+                    />
                   ))}
                 </div>
                 <div className="mt-8 border-b border-gray-200 dark:border-gray-800"></div>

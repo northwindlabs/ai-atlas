@@ -27,7 +27,7 @@ AI Atlas is a comprehensive directory of European AI services and tools. Our mis
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/aiatlas.git
+   git clone https://github.com/northwindlabs/ai-atlas.git
    cd aiatlas
    ```
 
