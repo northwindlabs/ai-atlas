@@ -11,7 +11,6 @@ interface ServiceCardProps {
   category: Category;
 }
 
-// ServiceCard component to handle favicon loading
 const ServiceCard = ({ service, category }: ServiceCardProps) => {
   const [showEmoji, setShowEmoji] = useState(true);
   const faviconUrl = getFaviconUrl(service.link);
@@ -70,6 +69,22 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <div className="absolute right-0 top-0 p-4 z-20">
+        <Link 
+          href="https://github.com/northwindlabs/ai-atlas" 
+          target="_blank"
+          className="dark:bg-white/10 rounded-lg px-4 py-2 hover:bg-black/20 dark:hover:bg-white/20 flex items-center gap-2 transition-colors"
+        >
+           <Image
+            src="/github-mark-white.svg"
+            alt="GitHub"
+            width={20}
+            height={20}
+            className={`w-5 h-5 brightness-0 dark:brightness-100`}
+       />
+          <span className="text-sm text-black dark:text-white">Contribute</span>
+        </Link>
+      </div>
       {/* Hero Section with Atlas-inspired header */}
       <header className="eu-gradient text-white py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
