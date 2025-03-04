@@ -313,6 +313,14 @@ export const categories: Category[] = [
         country: "🇫🇷",
         link: "https://labs.ovhcloud.com/en/ai-endpoints/",
       },
+      {
+        name: "Hugging Face",
+        description: "Deploy Open Source Models and turn them into APIs",
+        icon: "🤗",
+        country: "🇫🇷",
+        link: "https://huggingface.co/inference-endpoints/dedicated",
+      }
+
     ],
   },
 ]; 
