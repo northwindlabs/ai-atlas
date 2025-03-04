@@ -135,7 +135,7 @@ export const categories: Category[] = [
     services: [
       {
         name: "Lovable",
-        description: "AI-powered code review assistant that helps developers write better code with automated quality checks and suggestions",
+        description: "Automated app creation and coding. Describe what you want to build in natural language.",
         icon: "❤️",
         country: "🇸🇪",
         link: "https://lovable.dev/",
