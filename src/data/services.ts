@@ -176,6 +176,13 @@ export const categories: Category[] = [
         country: "🇩🇪",
         link: "https://pollinations.ai/",
       },
+      {
+        name: "Black Forest Labs",
+        description: "Famous for the open source text-to-image model FLUX. Provides api-services",
+        icon: "📸",
+        country: "🇩🇪",
+        link: "https://blackforestlabs.ai/",
+      },
     ],
   },
   {
