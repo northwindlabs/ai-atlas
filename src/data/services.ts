@@ -6,6 +6,8 @@ export interface Service {
   description: string;
   icon: string;
   country: string;
+  hq?: string;
+  legal?: string;
   link: string;
 }
 
@@ -138,6 +140,8 @@ export const categories: Category[] = [
         description: "Automated app creation and coding. Describe what you want to build in natural language.",
         icon: "❤️",
         country: "🇸🇪",
+        hq: "🇸🇪",
+        legal: "🇺🇸",
         link: "https://lovable.dev/",
       },
       {
@@ -250,6 +254,13 @@ export const categories: Category[] = [
     color: "bg-[#4361EE]",
     services: [
       {
+        name: "Ebbot",
+        description: "AI chatbot platform for automated customer support",
+        icon: "💬",
+        country: "🇸🇪",
+        link: "https://www.ebbot.com"
+      },
+      {
         name: "PolyAI",
         description: "Conversational AI platform for call centers and customer service with human-like voice assistants",
         icon: "📞",
@@ -328,6 +339,36 @@ export const categories: Category[] = [
         link: "https://huggingface.co/inference-endpoints/dedicated",
       }
 
+    ],
+  },
+  {
+    id: "personalization",
+    name: "Personalization",
+    icon: "🎯",
+    color: "bg-[#45B7D1]",
+    services: [
+      {
+        name: "Rek.ai",
+        description: "AI-driven website content personalization engine",
+        icon: "🤖",
+        country: "🇸🇪",
+        link: "https://rek.ai"
+      },
+    ],
+  },
+  {
+    id: "translation",
+    name: "Translation",
+    icon: "🌐",
+    color: "bg-[#4A90E2]",
+    services: [
+      {
+        name: "DeepL",
+        description: "AI-powered translation with human-like accuracy and fluency",
+        icon: "📝",
+        country: "🇩🇪",
+        link: "https://www.deepl.com"
+      },
     ],
   },
 ]; 
