@@ -42,7 +42,14 @@ const ServiceCard = ({ service, category }: ServiceCardProps) => {
         <div>
           <h3 className="text-xl font-semibold flex items-center gap-2">
             {service.name}
-            <span className="text-base" title="Country of origin">{service.country}</span>
+            <div className="flex items-center gap-1">
+              <span className="text-base" title="Country of origin">{service.country}</span>
+              {service.hq && service.legal && (
+                <span className="text-xs text-gray-500 dark:text-gray-400 font-normal">
+                  ( Reg. {service.legal})
+                </span>
+              )}
+            </div>
           </h3>
         </div>
       </div>
