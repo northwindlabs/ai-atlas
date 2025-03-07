@@ -48,6 +48,13 @@ export const categories: Category[] = [
     icon: "🧠",
     color: "bg-[#4CAF50]",
     services: [
+        {
+    name: "Frag Das PDF",
+    description: "AI research assistant PDF Chat, conduct AI-powered literature research across over 200 million scientific articles, and write texts efficiently with the smart AI editor",
+    icon: "📘",
+    country: "🇦🇹",
+    link: "https://www.fragdaspdf.de/",
+  },
       {
         name: "Sanalabs",
         description: "Custom AI assistants that integrate with your business data and tools to enhance team productivity",
@@ -62,6 +69,13 @@ export const categories: Category[] = [
         country: "🇫🇷",
         link: "https://lighton.ai",
       },
+ {
+      name: "Branding5",
+      description: "AI-powered branding tool that helps businesses define their brand identity and develop effective marketing strategies",
+      icon: "🚀",
+      country: "🇦🇹",
+      link: "https://branding5.com/",
+    },
     ],
   },
   {
@@ -354,6 +368,13 @@ export const categories: Category[] = [
         country: "🇸🇪",
         link: "https://rek.ai"
       },
+      {
+      name: "Oscar Stories",
+      description: "Child-friendly AI applications",
+      icon: "📖",
+      country: "🇦🇹",
+      link: "https://oscarstories.com/",
+    },
     ],
   },
   {
