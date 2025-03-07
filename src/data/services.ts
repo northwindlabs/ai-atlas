@@ -392,4 +392,26 @@ export const categories: Category[] = [
       },
     ],
   },
+  {
+    id: "education",
+    name: "Education",
+    icon: "📚",
+    color: "bg-[#FF6B6B]",
+    services: [
+      {
+        name: "Gradr",
+        description: "A holistic educational AI solution for schools to generate exams, grade and analyze progress",
+        icon: "📊",
+        country: "🇸🇪",
+        link: "https://gradr.se/"
+      },
+      {
+        name: "Langoflow",
+        description: "AI-driven platform that strengthens students' writing development by providing immediate, pedagogical feedback aligned with curriculum",
+        icon: "✍️",
+        country: "🇸🇪",
+        link: "https://langoflow.ai/english"
+      },
+    ],
+  },
 ]; 
