@@ -65,13 +65,15 @@ We welcome contributions from the community! Here's how you can help:
 
 ### Guidelines for Adding Services
 
-- **European Focus**: The service should be developed by a company headquartered in Europe
-- **Active Service**: The service should be currently active and accessible
+- **European Focus**: The service should be developed by a company headquartered in Europe*. 
+- **Active Service**: The service should be currently active, usable and accessible (not just a waitlist)
 - **Generative AI Component**: The service should have an innovative generative AI solution as a significant part of its offering
-- **Accurate Description**: Provide a clear, concise description of what the service does
+- **Accurate Description**: Provide a clear, concise description of what the service does. Mention at least one AI feature to make it clear why they are in the list. Try to keep the description short.
 - **Appropriate Category**: Place the service in the most relevant category
 
 If you're unsure about which category to use or need to suggest a new one, please open an issue for discussion.
+
+*If the company has its headquarters in Europe but is registered somewhere else, please add separate hq and legal attributes (look at Lovable in the list as an example)
 
 ### Other Contributions
 
@@ -79,6 +81,13 @@ If you're unsure about which category to use or need to suggest a new one, pleas
 - Fix bugs or issues
 - Enhance documentation
 - Add new features
+
+1. Please create an issue first describing your proposed changes if they fall into the 'other contributions' category.
+2. Include mockups, photos or sketches if possible
+3. Wait for discussion and approval before submitting a PR
+4. For minor fixes (typos, small CSS adjustments), PRs can be submitted directly
+
+This helps us collaborate effectively and ensures your time is well spent.
 
 ## 📝 License
 
