@@ -82,6 +82,13 @@ If you're unsure about which category to use or need to suggest a new one, pleas
 - Enhance documentation
 - Add new features
 
+1. Please create an issue first describing your proposed changes if they fall into the 'other contributions' category.
+2. Include mockups, photos or sketches if possible
+3. Wait for discussion and approval before submitting a PR
+4. For minor fixes (typos, small CSS adjustments), PRs can be submitted directly
+
+This helps us collaborate effectively and ensures your time is well spent.
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
