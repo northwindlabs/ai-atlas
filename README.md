@@ -68,7 +68,7 @@ We welcome contributions from the community! Here's how you can help:
 - **European Focus**: The service should be developed by a company headquartered in Europe*. 
 - **Active Service**: The service should be currently active, usable and accessible (not just a waitlist)
 - **Generative AI Component**: The service should have an innovative generative AI solution as a significant part of its offering
-- **Accurate Description**: Provide a clear, concise description of what the service does. Try to keep it short
+- **Accurate Description**: Provide a clear, concise description of what the service does. Mention at least one AI feature to make it clear why they are in the list. Try to keep the description short.
 - **Appropriate Category**: Place the service in the most relevant category
 
 If you're unsure about which category to use or need to suggest a new one, please open an issue for discussion.
