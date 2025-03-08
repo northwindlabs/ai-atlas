@@ -201,9 +201,9 @@ export default function Home() {
       
 
           {/* Categories */}
-          <div className="space-y-16 px-4 md:px-8">
+          <div className="space-y-4 px-4 md:px-8">
             {categories.map((category) => (
-              <section key={category.id} id={category.id} className="scroll-mt-32 pt-4">
+              <section key={category.id} id={category.id} className="scroll-mt-40 pt-12">
                 <div className="flex items-center mb-6">
                   <h2 className="text-2xl font-bold">{category.name}</h2>
                 </div>
