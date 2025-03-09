@@ -464,4 +464,19 @@ export const categories: Category[] = [
       },
     ],
   },
+  {
+    id: "analytics",
+    name: "Analytics",
+    icon: "📊",
+    color: "bg-[#9333EA]",
+    services: [
+      {
+        name: "Norna",
+        description: "AI-powered analytics platform for the fashion industry.",
+        icon: "👗",
+        country: "🇸🇪",
+        link: "https://norna.ai"
+      },
+    ],
+  },
 ];
