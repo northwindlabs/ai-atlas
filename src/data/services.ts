@@ -479,4 +479,41 @@ export const categories: Category[] = [
       },
     ],
   },
+  {
+    id: "infrastructure",
+    name: "Infrastructure",
+    icon: "🖥️",
+    color: "bg-[#2563EB]",
+    services: [
+      {
+        name: "Airon",
+        description: "Private bare-metal AI infrastructure with NVIDIA GPUs, offering non-shared compute resources in European data centers",
+        icon: "⚡",
+        country: "🇸🇪",
+        link: "https://airon.ai"
+      },
+    ],
+  },
+  {
+    id: "models",
+    name: "AI Models",
+    icon: "🧬",
+    color: "bg-[#8B5CF6]",
+    services: [
+      {
+        name: "Aleph Alpha",
+        description: "Sovereign AI research company developing advanced language models with focus on explainability and enterprise deployment",
+        icon: "🔬",
+        country: "🇩🇪",
+        link: "https://aleph-alpha.com"
+      },
+      {
+        name: "Mistral AI",
+        description: "Open-weight Large Language Models with self-hosting options and cloud provider partnerships",
+        icon: "🌪️",
+        country: "🇫🇷",
+        link: "https://mistral.ai"
+      }
+    ],
+  },
 ];
