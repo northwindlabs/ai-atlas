@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import { categories, Service, Category } from "../data/services";
-import { getFaviconUrl } from "../utils/favicon";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { categories, Service, Category } from '../data/services';
+import { getFaviconUrl } from '../utils/favicon';
 
 interface ServiceCardProps {
   service: Service;
@@ -16,14 +16,16 @@ const ServiceCard = ({ service, category }: ServiceCardProps) => {
   const faviconUrl = getFaviconUrl(service.link);
 
   return (
-    <Link 
-      href={service.link} 
+    <Link
+      href={service.link}
       key={service.name}
       target="_blank"
       className="atlas-card p-5 flex flex-col h-full"
     >
       <div className="flex items-start gap-4 mb-3">
-        <div className={`w-12 h-12 bg-white rounded-lg flex items-center justify-center text-white text-2xl relative`}>
+        <div
+          className={`w-12 h-12 bg-white rounded-lg flex items-center justify-center text-white text-2xl relative`}
+        >
           {faviconUrl && (
             <Image
               src={faviconUrl}
@@ -35,15 +37,15 @@ const ServiceCard = ({ service, category }: ServiceCardProps) => {
               onLoad={() => setShowEmoji(false)}
             />
           )}
-          {showEmoji && (
-            <span>{service.icon}</span>
-          )}
+          {showEmoji && <span>{service.icon}</span>}
         </div>
         <div>
           <h3 className="text-xl font-semibold flex items-center gap-2">
             {service.name}
             <div className="flex items-center gap-1">
-              <span className="text-base" title="Country of origin">{service.country}</span>
+              <span className="text-base" title="Country of origin">
+                {service.country}
+              </span>
               {service.hq && service.legal && (
                 <span className="text-xs text-gray-500 dark:text-gray-400 font-normal">
                   ( Reg. {service.legal})
@@ -53,7 +55,9 @@ const ServiceCard = ({ service, category }: ServiceCardProps) => {
           </h3>
         </div>
       </div>
-      <p className="text-gray-600 dark:text-gray-400 flex-grow">{service.description}</p>
+      <p className="text-gray-600 dark:text-gray-400 flex-grow">
+        {service.description}
+      </p>
       <div className="mt-3 flex justify-end">
         <span className="text-[var(--eu-blue)] dark:text-[var(--eu-yellow)] font-medium flex items-center gap-1">
           Explore <span className="text-lg">→</span>
@@ -65,11 +69,11 @@ const ServiceCard = ({ service, category }: ServiceCardProps) => {
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-  
+
   const handleCategoryClick = () => {
     setMobileMenuOpen(false);
   };
@@ -77,18 +81,18 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="absolute right-0 top-0 p-4 z-20">
-        <Link 
-          href="https://github.com/northwindlabs/ai-atlas" 
+        <Link
+          href="https://github.com/northwindlabs/ai-atlas"
           target="_blank"
           className="dark:bg-white/10 bg-white/10 rounded-lg px-4 py-2 hover:bg-black/20 dark:hover:bg-white/20 flex items-center gap-2 transition-colors"
         >
-           <Image
+          <Image
             src="/github-mark-white.svg"
             alt="GitHub"
             width={20}
             height={20}
             className="w-5 h-5 invert-0"
-       />
+          />
           <span className="text-sm text-white dark:text-white">Contribute</span>
         </Link>
       </div>
@@ -98,11 +102,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1 space-y-6">
               <div className="flex items-center gap-4">
-                <Image 
-                  src="/europe-logo.svg" 
-                  alt="Europe AI Atlas Logo" 
-                  width={60} 
-                  height={60} 
+                <Image
+                  src="/europe-logo.svg"
+                  alt="Europe AI Atlas Logo"
+                  width={60}
+                  height={60}
                   className="rounded-full"
                 />
                 <h1 className="text-4xl md:text-6xl font-bold">
@@ -116,15 +120,14 @@ export default function Home() {
                 Your map to navigate the European AI landscape
               </p>
               <div className="pt-4">
-                <a 
-                  href="#chat" 
+                <a
+                  href="#chat"
                   className="inline-flex items-center gap-2 bg-[var(--eu-yellow)] text-[var(--eu-blue)] px-6 py-3 rounded-full font-medium hover:bg-white transition-colors"
                 >
                   Start Exploring <span className="text-xl">→</span>
                 </a>
               </div>
             </div>
- 
           </div>
         </div>
       </header>
@@ -135,40 +138,54 @@ export default function Home() {
           {/* Mobile Hamburger Button */}
           <div className="md:hidden flex justify-between items-center py-2 px-4">
             <div className="flex items-center gap-2">
-              <Image 
-                src="/europe-logo.svg" 
-                alt="Europe AI Atlas Logo" 
-                width={24} 
-                height={24} 
+              <Image
+                src="/europe-logo.svg"
+                alt="Europe AI Atlas Logo"
+                width={24}
+                height={24}
                 className="rounded-full"
               />
               <span className="font-bold">AI Atlas</span>
             </div>
-            <button 
+            <button
               onClick={toggleMobileMenu}
               className="p-1.5 rounded-md hover:bg-[#2c4b99] transition"
               aria-label="Toggle menu"
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
                 className="w-6 h-6"
               >
                 {mobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
           </div>
-          
+
           {/* Category Grid - Hidden on mobile by default, shown when menu is open */}
-          <div className={`${mobileMenuOpen ? 'grid py-2 px-4 md:px-0' : 'hidden'} md:grid md:py-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3`}>
+          <div
+            className={`${
+              mobileMenuOpen ? 'grid py-2 px-4 md:px-0' : 'hidden'
+            } md:grid md:py-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3`}
+          >
             {categories.map((category) => (
-              <a 
+              <a
                 key={category.id}
                 href={`#${category.id}`}
                 onClick={handleCategoryClick}
@@ -188,31 +205,37 @@ export default function Home() {
         <div className="max-w-7xl mx-auto space-y-12">
           {/* Welcome Message */}
           <section className="text-center max-w-3xl mx-auto mb-8 px-4 md:px-8">
-            <h2 className="text-3xl font-bold mb-4">Welcome to the European AI Atlas</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Welcome to the European AI Atlas
+            </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              Explore our collection of innovative European AI services that are shaping the future.
-              Find the perfect tools for your projects or discover new AI experiences.
+              Explore our collection of innovative European AI services that are
+              shaping the future. Find the perfect tools for your projects or
+              discover new AI experiences.
             </p>
             <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-              All services are categorized by their primary function, with country flags indicating company headquarters location.
+              All services are categorized by their primary function, with
+              country flags indicating company headquarters location.
             </p>
           </section>
-
-      
 
           {/* Categories */}
           <div className="space-y-4 px-4 md:px-8">
             {categories.map((category) => (
-              <section key={category.id} id={category.id} className="scroll-mt-40 pt-12">
+              <section
+                key={category.id}
+                id={category.id}
+                className="scroll-mt-20 md:scroll-mt-60 pt-12"
+              >
                 <div className="flex items-center mb-6">
                   <h2 className="text-2xl font-bold">{category.name}</h2>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {category.services.map((service) => (
-                    <ServiceCard 
-                      key={service.name} 
-                      service={service} 
+                    <ServiceCard
+                      key={service.name}
+                      service={service}
                       category={category}
                     />
                   ))}
@@ -242,7 +265,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 pt-6 border-t border-white/20 text-center text-sm text-white/60">
-            © {new Date().getFullYear()} AIAtlas • MIT Licensed • Contributions welcome
+            © {new Date().getFullYear()} AIAtlas • MIT Licensed • Contributions
+            welcome
           </div>
         </div>
       </footer>

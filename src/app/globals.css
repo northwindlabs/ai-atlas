@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-sans: var(--font-inter);
@@ -8,17 +8,17 @@
 :root {
   /* EU-inspired colors */
   --eu-blue: #003399;
-  --eu-yellow: #FFCC00;
-  --atlas-teal: #00A8A8;
-  --atlas-purple: #6A4C93;
-  --atlas-orange: #FF7F50;
-  
+  --eu-yellow: #ffcc00;
+  --atlas-teal: #00a8a8;
+  --atlas-purple: #6a4c93;
+  --atlas-orange: #ff7f50;
+
   --background: #ffffff;
   --foreground: #171717;
   --primary: var(--eu-blue);
   --secondary: var(--eu-yellow);
   --accent: var(--atlas-teal);
-  
+
   --card-bg: #f8f9fa;
   --card-hover: #f0f2f5;
 }
@@ -38,7 +38,12 @@ body {
   font-family: var(--font-sans);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
 }
