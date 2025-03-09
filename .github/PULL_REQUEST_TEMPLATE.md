@@ -14,12 +14,12 @@
 
 ## Service Information (if adding a new service)
 
-**Service Name**: 
-**Category**: 
-**Description**: 
-**Icon (emoji)**: 
-**Country**: 
-**Website URL**: 
+**Service Name**:
+**Category**:
+**Description**:
+**Icon (emoji)**:
+**Country**:
+**Website URL**:
 **Generative AI Component**: <!-- Briefly describe the generative AI technology used by this service -->
 
 ## Checklist
@@ -37,4 +37,4 @@
 
 ## Additional context
 
-<!-- Add any other context about your pull request here. --> 
+<!-- Add any other context about your pull request here. -->

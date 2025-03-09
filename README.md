@@ -26,17 +26,20 @@ AI Atlas is a comprehensive directory of European AI services and tools. Our mis
 ### Installation
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/northwindlabs/ai-atlas.git
    cd aiatlas
    ```
 
 2. Install dependencies
+
    ```bash
    npm install
    ```
 
 3. Run the development server
+
    ```bash
    npm run dev
    ```
@@ -65,7 +68,7 @@ We welcome contributions from the community! Here's how you can help:
 
 ### Guidelines for Adding Services
 
-- **European Focus**: The service should be developed by a company headquartered in Europe*. 
+- **European Focus**: The service should be developed by a company headquartered in Europe\*.
 - **Active Service**: The service should be currently active, usable and accessible (not just a waitlist)
 - **Generative AI Component**: The service should have an innovative generative AI solution as a significant part of its offering
 - **Accurate Description**: Provide a clear, concise description of what the service does. Mention at least one AI feature to make it clear why they are in the list. Try to keep the description short.
@@ -73,7 +76,7 @@ We welcome contributions from the community! Here's how you can help:
 
 If you're unsure about which category to use or need to suggest a new one, please open an issue for discussion.
 
-*If the company has its headquarters in Europe but is registered somewhere else, please add separate hq and legal attributes (look at Lovable in the list as an example)
+\*If the company has its headquarters in Europe but is registered somewhere else, please add separate hq and legal attributes (look at Lovable in the list as an example)
 
 ### Other Contributions
 

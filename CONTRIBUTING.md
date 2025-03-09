@@ -107,4 +107,4 @@ If you believe a new category is needed:
 
 If you have any questions or need help, please open an issue or reach out to the maintainers.
 
-Thank you for contributing to AI Atlas! 🇪🇺 
+Thank you for contributing to AI Atlas! 🇪🇺

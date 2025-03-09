@@ -27,10 +27,9 @@ async function isUrlAccessible(url: string): Promise<boolean> {
 export async function findFavicon(websiteUrl: string): Promise<string | null> {
   try {
     const origin = new URL(websiteUrl).origin;
-    
+
     // If all attempts fail, try a favicon service as last resort
     return `https://www.google.com/s2/favicons?domain=${origin}&sz=32`;
-    
   } catch {
     return null;
   }
@@ -46,4 +45,4 @@ export function getFaviconUrl(websiteUrl: string): string | null {
   } catch {
     return null;
   }
-} 
+}

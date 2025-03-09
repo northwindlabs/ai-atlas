@@ -8,12 +8,12 @@ assignees: ''
 
 ## Service Information
 
-**Service Name**: 
+**Service Name**:
 **Category**: <!-- e.g., Chat, Image, Video, Audio, etc. -->
 **Description**: <!-- Brief description (max 150 characters) -->
-**Icon (emoji suggestion)**: 
+**Icon (emoji suggestion)**:
 **Country**: <!-- Where is the company headquartered? -->
-**Website URL**: 
+**Website URL**:
 **Generative AI Component**: <!-- Describe the generative AI technology used by this service -->
 
 ## Why should this service be added?
@@ -30,4 +30,4 @@ assignees: ''
 - [ ] The service is currently active and accessible
 - [ ] The service is AI-related
 - [ ] The service has an innovative generative AI solution as a significant part of its offering
-- [ ] I have provided all the required information above 
+- [ ] I have provided all the required information above
