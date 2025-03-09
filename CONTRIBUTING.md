@@ -91,9 +91,30 @@ If you believe a new category is needed:
 
 ## Code Style
 
-- Follow the existing code style and formatting.
-- Use TypeScript types appropriately.
-- Keep code clean and well-documented.
+We use Prettier and ESLint for code quality and formatting. Before submitting a PR:
+
+1. Install dependencies: `npm install`
+2. Format your code: `npm run format` (this will run Prettier)
+3. Check for linting issues: `npm run lint` (this will run ESLint)
+
+The project uses standard Prettier configuration with:
+- Single quotes for JavaScript strings
+- Double quotes for JSX attributes (HTML convention)
+- Semicolons
+- 2 spaces indentation
+- ES5 trailing commas
+- Spaces in object literals
+- Parentheses around arrow function parameters
+
+You can check our formatting rules in `.prettierrc` and ESLint configuration in `.eslintrc.json`.
+
+### VS Code Setup
+
+1. Install the Prettier extension
+2. Enable "Format On Save" in VS Code settings
+3. Set Prettier as the default formatter
+
+You can also set up your editor to format on save using the project's Prettier configuration.
 
 ## Pull Request Process
 
@@ -107,4 +128,4 @@ If you believe a new category is needed:
 
 If you have any questions or need help, please open an issue or reach out to the maintainers.
 
-Thank you for contributing to AI Atlas! 🇪🇺 
+Thank you for contributing to AI Atlas! 🇪🇺

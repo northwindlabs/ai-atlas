@@ -14,12 +14,12 @@
 
 ## Service Information (if adding a new service)
 
-**Service Name**: 
-**Category**: 
-**Description**: 
-**Icon (emoji)**: 
-**Country**: 
-**Website URL**: 
+**Service Name**:
+**Category**:
+**Description**:
+**Icon (emoji)**:
+**Country**:
+**Website URL**:
 **Generative AI Component**: <!-- Briefly describe the generative AI technology used by this service -->
 
 ## Checklist
@@ -27,6 +27,8 @@
 - [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md) document
 - [ ] My code follows the style guidelines of this project
 - [ ] I have tested my changes locally
+- [ ] I have run `npm run format` to format my code with Prettier
+- [ ] I have run `npm run lint` to check for any linting issues
 - [ ] The service I'm adding is headquartered in Europe
 - [ ] The service is currently active and accessible
 - [ ] The service has an innovative generative AI solution as a significant part of its offering
@@ -37,4 +39,4 @@
 
 ## Additional context
 
-<!-- Add any other context about your pull request here. --> 
+<!-- Add any other context about your pull request here. -->
