@@ -513,6 +513,13 @@ export const categories: Category[] = [
         icon: "🌪️",
         country: "🇫🇷",
         link: "https://mistral.ai"
+      },
+      {
+        name: "Ellamind",
+        description: "Research lab fine tuning large language models.",
+        icon: "🤖",
+        country: "🇩🇪",
+        link: "https://www.ellamind.com"
       }
     ],
   },
