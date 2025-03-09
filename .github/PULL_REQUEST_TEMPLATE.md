@@ -27,6 +27,8 @@
 - [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md) document
 - [ ] My code follows the style guidelines of this project
 - [ ] I have tested my changes locally
+- [ ] I have run `npm run format` to format my code with Prettier
+- [ ] I have run `npm run lint` to check for any linting issues
 - [ ] The service I'm adding is headquartered in Europe
 - [ ] The service is currently active and accessible
 - [ ] The service has an innovative generative AI solution as a significant part of its offering
