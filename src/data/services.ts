@@ -179,6 +179,13 @@ export const categories: Category[] = [
         country: '🇫🇷',
         link: 'https://poolside.ai/',
       },
+      {
+        name: 'Databutton',
+        description: 'AI developer leveraging a reasoning AI agent to help build and deploy applications',
+        icon: '🤖',
+        country: '🇳🇴',
+        link: 'https://databutton.com/',
+      },
     ],
   },
   {
