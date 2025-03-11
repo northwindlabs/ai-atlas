@@ -462,6 +462,13 @@ export const categories: Category[] = [
         country: '🇸🇪',
         link: 'https://www.intellectus.app/',
       },
+      {
+        name: 'Pluggdax',
+        description: 'AI-powered quiz and flashcards creator. Create quizzes and flashcards from text or from images of text.',
+        icon: '🎯',
+        country: '🇸🇪',
+        link: 'https://pluggdax.se/en/'
+      },
     ],
   },
   {
