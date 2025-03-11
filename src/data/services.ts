@@ -179,6 +179,13 @@ export const categories: Category[] = [
         country: '🇫🇷',
         link: 'https://poolside.ai/',
       },
+      {
+        name: 'Databutton',
+        description: 'AI developer leveraging a reasoning AI agent to help build and deploy applications',
+        icon: '🤖',
+        country: '🇳🇴',
+        link: 'https://databutton.com/',
+      },
     ],
   },
   {
@@ -461,6 +468,13 @@ export const categories: Category[] = [
         icon: '👩‍🏫',
         country: '🇸🇪',
         link: 'https://www.intellectus.app/',
+      },
+      {
+        name: 'Pluggdax',
+        description: 'AI-powered quiz and flashcards creator. Create quizzes and flashcards from text or from images of text.',
+        icon: '🎯',
+        country: '🇸🇪',
+        link: 'https://pluggdax.se/en/'
       },
     ],
   },
