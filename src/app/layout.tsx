@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
+import Script from 'next/script';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -34,8 +35,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head />
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
         {children}
+        <Script
+          data-goatcounter="https://aiatlas.goatcounter.com/count"
+          async
+            src="//gc.zgo.at/count.js"
+          />
       </body>
     </html>
   );
