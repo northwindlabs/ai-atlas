@@ -15,9 +15,24 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'AI Atlas - European AI Services Directory',
-  description:
-    'Discover the best European AI services for consumers and developers',
+  title: 'European AI Atlas',
+  description: 'Discover and explore European AI companies and services across different categories.',
+  openGraph: {
+    title: 'European AI Atlas',
+    description: 'Discover and explore European AI companies and services across different categories.',
+    url: 'https://aiatlas.eu',
+    siteName: 'European AI Atlas',
+    images: [
+      {
+        url: '/OG.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'European AI Atlas - Discover European AI Companies',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
   icons: {
     icon: [
       {
