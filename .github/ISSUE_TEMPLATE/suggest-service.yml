@@ -51,6 +51,7 @@ body:
         - Analytics
         - Infrastructure
         - AI Models
+        - Other (please specify in description)
     validations:
       required: true
 
