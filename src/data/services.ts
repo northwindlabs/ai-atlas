@@ -478,14 +478,6 @@ export const categories: Category[] = [
         link: 'https://www.intellectus.app/',
       },
       {
-        name: 'Pluggdax',
-        description:
-          'AI-powered quiz and flashcards creator. Create quizzes and flashcards from text or from images of text.',
-        icon: '🎯',
-        country: '🇸🇪',
-        link: 'https://pluggdax.se/en/',
-      },
-      {
         name: 'thesify',
         description:
           'Responsible academic writing for students and researchers.',
