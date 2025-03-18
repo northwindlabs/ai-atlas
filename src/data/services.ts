@@ -137,6 +137,13 @@ export const categories: Category[] = [
         country: '🇸🇪',
         link: 'https://klang.ai',
       },
+      {
+        name: "Schweizerdeutsch Übersetzer App",
+        description: "Swiss German audio and video transcription. Use mobile app for offline meetings & interviews or web app for online-talks!",
+        icon: "🐮",
+        country: "🇨🇭",
+        link: "https://schweizerdeutsch-uebersetzen.ch/",
+      }
     ],
   },
   {
@@ -469,14 +476,6 @@ export const categories: Category[] = [
         icon: '👩‍🏫',
         country: '🇸🇪',
         link: 'https://www.intellectus.app/',
-      },
-      {
-        name: 'Pluggdax',
-        description:
-          'AI-powered quiz and flashcards creator. Create quizzes and flashcards from text or from images of text.',
-        icon: '🎯',
-        country: '🇸🇪',
-        link: 'https://pluggdax.se/en/',
       },
       {
         name: 'thesify',
