@@ -98,6 +98,7 @@ We use Prettier and ESLint for code quality and formatting. Before submitting a 
 3. Check for linting issues: `npm run lint` (this will run ESLint)
 
 The project uses standard Prettier configuration with:
+
 - Single quotes for JavaScript strings
 - Double quotes for JSX attributes (HTML convention)
 - Semicolons

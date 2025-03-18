@@ -181,7 +181,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Databutton',
-        description: 'AI developer leveraging a reasoning AI agent to help build and deploy applications',
+        description:
+          'AI developer leveraging a reasoning AI agent to help build and deploy applications',
         icon: '🤖',
         country: '🇳🇴',
         link: 'https://databutton.com/',
@@ -471,70 +472,82 @@ export const categories: Category[] = [
       },
       {
         name: 'Pluggdax',
-        description: 'AI-powered quiz and flashcards creator. Create quizzes and flashcards from text or from images of text.',
+        description:
+          'AI-powered quiz and flashcards creator. Create quizzes and flashcards from text or from images of text.',
         icon: '🎯',
         country: '🇸🇪',
-        link: 'https://pluggdax.se/en/'
+        link: 'https://pluggdax.se/en/',
+      },
+      {
+        name: 'thesify',
+        description:
+          'Responsible academic writing for students and researchers.',
+        icon: '🧠',
+        country: '🇨🇭',
+        link: 'https://thesify.ai/',
       },
     ],
   },
   {
-    id: "analytics",
-    name: "Analytics",
-    icon: "📊",
-    color: "bg-[#9333EA]",
+    id: 'analytics',
+    name: 'Analytics',
+    icon: '📊',
+    color: 'bg-[#9333EA]',
     services: [
       {
-        name: "Norna",
-        description: "AI-powered analytics platform for the fashion industry.",
-        icon: "👗",
-        country: "🇸🇪",
-        link: "https://norna.ai"
+        name: 'Norna',
+        description: 'AI-powered analytics platform for the fashion industry.',
+        icon: '👗',
+        country: '🇸🇪',
+        link: 'https://norna.ai',
       },
     ],
   },
   {
-    id: "infrastructure",
-    name: "Infrastructure",
-    icon: "🖥️",
-    color: "bg-[#2563EB]",
+    id: 'infrastructure',
+    name: 'Infrastructure',
+    icon: '🖥️',
+    color: 'bg-[#2563EB]',
     services: [
       {
-        name: "Airon",
-        description: "Private bare-metal AI infrastructure with NVIDIA GPUs, offering non-shared compute resources in European data centers",
-        icon: "⚡",
-        country: "🇸🇪",
-        link: "https://airon.ai"
+        name: 'Airon',
+        description:
+          'Private bare-metal AI infrastructure with NVIDIA GPUs, offering non-shared compute resources in European data centers',
+        icon: '⚡',
+        country: '🇸🇪',
+        link: 'https://airon.ai',
       },
     ],
   },
   {
-    id: "models",
-    name: "AI Models",
-    icon: "🧬",
-    color: "bg-[#8B5CF6]",
+    id: 'models',
+    name: 'AI Models',
+    icon: '🧬',
+    color: 'bg-[#8B5CF6]',
     services: [
       {
-        name: "Aleph Alpha",
-        description: "Sovereign AI research company developing advanced language models with focus on explainability and enterprise deployment",
-        icon: "🔬",
-        country: "🇩🇪",
-        link: "https://aleph-alpha.com"
+        name: 'Aleph Alpha',
+        description:
+          'Sovereign AI research company developing advanced language models with focus on explainability and enterprise deployment',
+        icon: '🔬',
+        country: '🇩🇪',
+        link: 'https://aleph-alpha.com',
       },
       {
-        name: "Mistral AI",
-        description: "Open-weight Large Language Models with self-hosting options and cloud provider partnerships",
-        icon: "🌪️",
-        country: "🇫🇷",
-        link: "https://mistral.ai"
+        name: 'Mistral AI',
+        description:
+          'Open-weight Large Language Models with self-hosting options and cloud provider partnerships',
+        icon: '🌪️',
+        country: '🇫🇷',
+        link: 'https://mistral.ai',
       },
       {
-        name: "Ellamind",
-        description: "Research lab fine tuning large language models.",
-        icon: "🤖",
-        country: "🇩🇪",
-        link: "https://www.ellamind.com"
-      }
+        name: 'Ellamind',
+        description: 'Research lab fine tuning large language models.',
+        icon: '🤖',
+        country: '🇩🇪',
+        link: 'https://www.ellamind.com',
+      },
     ],
   },
 ];
