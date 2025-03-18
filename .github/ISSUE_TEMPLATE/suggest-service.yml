@@ -1,15 +1,16 @@
-name: Suggest a Service
+name: Suggest a Service for the European AI Atlas
 description: Suggest a European AI service to be added to AI Atlas
-title: "Add: [Service Name]"
+title: "Adding a new service"
 labels: ["new-service"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to suggest a service! 🙌
-        
-        We list European AI companies that are currently active and offer innovative AI solutions.
+        👉 Please add the details for the new service below
 
+        We list European AI companies that are currently active and offer AI solutions.
+
+        Thanks for taking the time to suggest a service! 🙌
   - type: input
     id: service-name
     attributes:
@@ -34,16 +35,22 @@ body:
       label: Category
       description: Which category fits this service best?
       options:
-        - Chat & Text
-        - Image & Art
+        - Chat
+        - Assistants
+        - Audio
+        - Marketplace
+        - Coding
+        - Image
         - Video
-        - Audio & Music
+        - Automation
+        - Customer Service AI
+        - Inference API
+        - Personalization
+        - Translation
+        - Education
         - Analytics
         - Infrastructure
-        - Enterprise
-        - Assistants
-        - Education
-        - Other (please specify in description)
+        - AI Models
     validations:
       required: true
 
@@ -51,8 +58,8 @@ body:
     id: description
     attributes:
       label: Description
-      description: Briefly describe what the service does (max 150 characters)
-      placeholder: "Example: AI-powered tool that helps with..."
+      description: Briefly describe what the service does and what AI features it offers (max 150 characters)
+      placeholder: "Example: Video editing tool that uses AI to create videos from images..."
     validations:
       required: true
 
@@ -76,19 +83,28 @@ body:
         - 🇬🇷 Greece
         - 🇭🇺 Hungary
         - 🇮🇪 Ireland
+        - 🇮🇸 Iceland
         - 🇮🇹 Italy
         - 🇱🇻 Latvia
+        - 🇱🇮 Liechtenstein
         - 🇱🇹 Lithuania
         - 🇱🇺 Luxembourg
         - 🇲🇹 Malta
+        - 🇲🇨 Monaco
         - 🇳🇱 Netherlands
+        - 🇳🇴 Norway
         - 🇵🇱 Poland
         - 🇵🇹 Portugal
         - 🇷🇴 Romania
+        - 🇸🇲 San Marino
+        - 🇷🇸 Serbia
         - 🇸🇰 Slovakia
         - 🇸🇮 Slovenia
         - 🇪🇸 Spain
         - 🇸🇪 Sweden
+        - 🇨🇭 Switzerland
+        - 🇺🇦 Ukraine
+        - 🇬🇧 United Kingdom
         - Other (please specify)
     validations:
       required: true
@@ -97,7 +113,7 @@ body:
     id: legal-country
     attributes:
       label: Legal Registration Country
-      description: If the company is legally registered in a different country, please specify (optional)
+      description: If the company is legally registered in a different country, please specify (optional). This is often visible in their terms of service.
       placeholder: "Example: United States"
 
   - type: checkboxes
@@ -108,7 +124,7 @@ body:
       options:
         - label: The service is currently active and available to use (not just a waitlist)
           required: true
-        - label: The service uses AI/ML as a significant part of its offering
+        - label: The service uses AI/ML as an important part of its main feature set
           required: true
         - label: I've checked that this service isn't already listed
           required: true
