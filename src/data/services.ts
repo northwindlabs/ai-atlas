@@ -137,6 +137,13 @@ export const categories: Category[] = [
         country: '🇸🇪',
         link: 'https://klang.ai',
       },
+      {
+        name: "Schweizerdeutsch Übersetzer App",
+        description: "Swiss German audio and video transcription. Use mobile app for offline meetings & interviews or web app for online-talks!",
+        icon: "🐮",
+        country: "🇨🇭",
+        link: "https://schweizerdeutsch-uebersetzen.ch/",
+      }
     ],
   },
   {
