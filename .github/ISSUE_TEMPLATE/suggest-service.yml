@@ -1,6 +1,6 @@
 name: Suggest a Service for the European AI Atlas
 description: Suggest a European AI service to be added to AI Atlas
-title: "Adding a new service"
+title: "Suggesting a new service"
 labels: ["new-service"]
 body:
   - type: markdown
