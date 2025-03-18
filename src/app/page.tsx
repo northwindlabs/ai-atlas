@@ -243,6 +243,9 @@ export default function Home() {
               All services are categorized by their primary function, with
               country flags indicating company headquarters location.
             </p>
+            <div className="mt-6">
+              <SuggestButton />
+            </div>
           </section>
 
           {/* Categories */}
