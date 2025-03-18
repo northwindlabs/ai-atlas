@@ -67,21 +67,6 @@ const ServiceCard = ({ service, category }: ServiceCardProps) => {
   );
 };
 
-const SuggestButton = () => (
-  <a 
-    href="https://github.com/northwindlabs/ai-atlas/issues/new?template=suggest-service.yml"
-    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-[var(--eu-blue)] rounded-md hover:bg-[#2c4b99] transition-colors"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span>Suggest a Service</span>
-    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-    </svg>
-  </a>
-)
-
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -232,9 +217,6 @@ export default function Home() {
               All services are categorized by their primary function, with
               country flags indicating company headquarters location.
             </p>
-            <div className="mt-6">
-              <SuggestButton />
-            </div>
           </section>
 
           {/* Categories */}
