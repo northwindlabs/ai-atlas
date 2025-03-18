@@ -476,6 +476,14 @@ export const categories: Category[] = [
         country: '🇸🇪',
         link: 'https://pluggdax.se/en/'
       },
+      {
+        name: 'thesify',
+        description:
+          'Responsible academic writing for students and researchers.',
+        icon: '🧠',
+        country: '🇨🇭',
+        link: 'https://thesify.ai/',
+      },
     ],
   },
   {
