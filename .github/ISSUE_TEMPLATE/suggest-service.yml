@@ -1,7 +1,7 @@
 name: Suggest a Service for the European AI Atlas
 description: Suggest a European AI service to be added to AI Atlas
-title: "Suggesting a new service"
-labels: ["new-service"]
+title: 'Suggesting a new service'
+labels: ['new-service']
 body:
   - type: markdown
     attributes:
@@ -16,7 +16,7 @@ body:
     attributes:
       label: Service Name
       description: What's the name of the AI service?
-      placeholder: "Example: AI Atlas"
+      placeholder: 'Example: AI Atlas'
     validations:
       required: true
 
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Website
       description: The service's official website
-      placeholder: "https://example.com"
+      placeholder: 'https://example.com'
     validations:
       required: true
 
@@ -60,7 +60,7 @@ body:
     attributes:
       label: Description
       description: Briefly describe what the service does and what AI features it offers (max 150 characters)
-      placeholder: "Example: Video editing tool that uses AI to create videos from images..."
+      placeholder: 'Example: Video editing tool that uses AI to create videos from images...'
     validations:
       required: true
 
@@ -115,7 +115,7 @@ body:
     attributes:
       label: Legal Registration Country
       description: If the company is legally registered in a different country, please specify (optional). This is often visible in their terms of service.
-      placeholder: "Example: United States"
+      placeholder: 'Example: United States'
 
   - type: checkboxes
     id: requirements
@@ -135,4 +135,4 @@ body:
     attributes:
       label: Additional Information
       description: Anything else you'd like to tell us about this service?
-      placeholder: "Optional: Any other details that might be helpful..." 
+      placeholder: 'Optional: Any other details that might be helpful...'

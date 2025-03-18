@@ -1,27 +1,4 @@
 /**
- * Common favicon paths and formats to try
- */
-const FAVICON_PATHS = [
-  '/favicon.ico',
-  '/favicon.png',
-  '/favicon-32x32.png',
-  '/apple-touch-icon.png',
-  '/apple-touch-icon-precomposed.png',
-];
-
-/**
- * Checks if a URL is accessible
- */
-async function isUrlAccessible(url: string): Promise<boolean> {
-  try {
-    const response = await fetch(url, { method: 'HEAD' });
-    return response.ok;
-  } catch {
-    return false;
-  }
-}
-
-/**
  * Finds the first available favicon URL for a given website
  */
 export async function findFavicon(websiteUrl: string): Promise<string | null> {

@@ -63,8 +63,8 @@ export default function RootLayout({
         <Script
           data-goatcounter="https://aiatlas.goatcounter.com/count"
           async
-            src="//gc.zgo.at/count.js"
-          />
+          src="//gc.zgo.at/count.js"
+        />
       </body>
     </html>
   );
