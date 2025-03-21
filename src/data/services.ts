@@ -421,6 +421,13 @@ export const categories: Category[] = [
         country: '🇫🇷',
         link: 'https://huggingface.co/inference-endpoints/dedicated',
       },
+      {
+        name: 'Eden AI',
+        description: 'Unified API platform providing access to 100+ AI models. Includes monitoring tools and a workflow builder.',
+        icon: '⚡',
+        country: '🇫🇷',
+        link: 'https://www.edenai.co/',
+      },
     ],
   },
   {
