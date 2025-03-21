@@ -35,6 +35,13 @@ export const categories: Category[] = [
         link: 'https://mistral.ai/',
       },
       {
+        name: 'HuggingChat',
+        description: 'Chat interface from Hugging Face to interact with open-source AI models',
+        icon: '🤗',
+        country: '🇫🇷',
+        link: 'https://huggingface.co/chat/',
+      },
+      {
         name: 'LuzIA',
         description:
           'Multilingual AI chat assistant accessible via WhatsApp and Telegram',
@@ -143,7 +150,14 @@ export const categories: Category[] = [
         icon: "🐮",
         country: "🇨🇭",
         link: "https://schweizerdeutsch-uebersetzen.ch/",
-      }
+      },
+      {
+        name: 'Töggl',
+        description: 'Transcription service for all Swiss languages and dialects',
+        icon: '🎙️',
+        country: '🇨🇭',
+        link: 'https://töggl.ch',
+      },
     ],
   },
   {
@@ -273,6 +287,13 @@ export const categories: Category[] = [
         icon: '✨',
         country: '🇬🇧',
         link: 'https://metaphysic.ai/',
+      },
+      {
+        name: 'Alugha',
+        description: 'Transcribe, translate, voiceover, and host your videos with AI',
+        icon: '🎥',
+        country: '🇩🇪',
+        link: 'https://alugha.com',
       },
     ],
   },
@@ -438,6 +459,13 @@ export const categories: Category[] = [
         country: '🇩🇪',
         link: 'https://www.deepl.com',
       },
+      {
+        name: 'Fair Text',
+        description: 'AI-powered simplification of complex German texts for clear and accessible communication',
+        icon: '📄',
+        country: '🇩🇪',
+        link: 'https://fair-text.com',
+      },
     ],
   },
   {
@@ -546,6 +574,50 @@ export const categories: Category[] = [
         icon: '🤖',
         country: '🇩🇪',
         link: 'https://www.ellamind.com',
+      },
+    ],
+  },
+  {
+    id: 'manufacturing',
+    name: 'Manufacturing',
+    icon: '🏭',
+    color: 'bg-[#607D8B]',
+    services: [
+      {
+        name: 'KNOWRON',
+        description: 'AI assistant for industrial technicians providing instant access to manuals and troubleshooting guides',
+        icon: '🔧',
+        country: '🇩🇪',
+        link: 'https://www.knowron.com/',
+      },
+      {
+        name: 'Synthavo',
+        description: 'AI-powered visual identification of machine spare parts using smartphone photos',
+        icon: '📱',
+        country: '🇩🇪',
+        link: 'https://www.synthavo.de/en/',
+      },
+      {
+        name: 'Bowatt',
+        description: 'AI platform for managing and analyzing customer specifications in industrial automation projects',
+        icon: '⚡',
+        country: '🇩🇪',
+        link: 'https://www.bowatt.com/',
+      },
+    ],
+  },
+  {
+    id: 'marketing',
+    name: 'Marketing',
+    icon: '📢',
+    color: 'bg-[#F06292]',
+    services: [
+      {
+        name: 'Neuroflash',
+        description: 'Create, personalize and optimize marketing content in one AI platform',
+        icon: '✨',
+        country: '🇩🇪',
+        link: 'https://neuroflash.com/',
       },
     ],
   },
