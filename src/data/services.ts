@@ -89,6 +89,13 @@ export const categories: Category[] = [
         country: '🇦🇹',
         link: 'https://branding5.com/',
       },
+      {
+        name: 'Localmind',
+        description: 'Secure on-premise AI for companies. Train custom AI with your data & automate processes with full control and privacy.',
+        icon: '🔒',
+        country: '🇦🇹',
+        link: 'https://www.localmind.ai',
+      },
     ],
   },
   {
@@ -445,7 +452,7 @@ export const categories: Category[] = [
       },
       {
         name: 'Oscar Stories',
-        description: 'Child-friendly AI applications',
+        description: 'Create personalized stories for children',
         icon: '📖',
         country: '🇦🇹',
         link: 'https://oscarstories.com/',
@@ -519,6 +526,13 @@ export const categories: Category[] = [
         icon: '🧠',
         country: '🇨🇭',
         link: 'https://thesify.ai/',
+      },
+      {
+        name: 'Acemate',
+        description: 'AI teaching platform that empowers universities to provide personalized learning at scale',
+        icon: '🎓',
+        country: '🇩🇪',
+        link: 'https://www.acemate.ai/en/educators',
       },
     ],
   },
