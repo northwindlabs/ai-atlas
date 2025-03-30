@@ -642,4 +642,19 @@ export const categories: Category[] = [
       },
     ],
   },
+  {
+    id: 'productivity',
+    name: 'Productivity',
+    icon: '📊',
+    color: 'bg-[#4CAF50]',
+    services: [
+      {
+        name: 'Smart Calendars AI',
+        description: 'AI-powered calendar assistant that creates events from voice, photos, and text. Seamless integration across the Apple ecosystem.',
+        icon: '📅',
+        country: '🇩🇪',
+        link: 'https://www.smartcalendars.ai/'
+      }
+    ]
+  },
 ];
