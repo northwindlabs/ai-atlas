@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
             <p className="mb-4">We collect data and process data when you:</p>
             <ul className="list-disc pl-6 mb-4">
               <li>Register on our website or subscribe to our newsletter</li>
-              <li>Browse our site.</li>
+              <li>Browse our site (anonymous data only).</li>
             </ul>
           </section>
 
@@ -61,8 +61,8 @@ export default function PrivacyPolicy() {
               How do we store your data?
             </h2>
             <p className="mb-4">
-              Our Company securely stores your data in a datacenter located in
-              Stockholm, Sweden, with encryption both in-transit and at rest.
+              Our Company securely stores your personal data on servers located
+              in the European Union.
             </p>
             <p className="mb-4">
               Our Company will keep your account/subscription data until you
@@ -104,8 +104,8 @@ export default function PrivacyPolicy() {
               </p>
               <p>
                 <strong>The right to object to processing</strong> – You have
-                the right to object to Our Company&apos;s processing of your personal
-                data, under certain conditions.
+                the right to object to Our Company&apos;s processing of your
+                personal data, under certain conditions.
               </p>
               <p>
                 <strong>The right to data portability</strong> – You have the
@@ -152,8 +152,8 @@ export default function PrivacyPolicy() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">How to contact us</h2>
             <p className="mb-4">
-              If you have any questions about Our Company&apos;s privacy policy, the
-              data we hold on you, or you would like to exercise one of your
+              If you have any questions about Our Company&apos;s privacy policy,
+              the data we hold on you, or you would like to exercise one of your
               data protection rights, please do not hesitate to contact us.
             </p>
             <p className="mb-4">
