@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 interface ActionButtonProps {
   href: string;
@@ -11,11 +10,19 @@ interface ActionButtonProps {
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export default function ActionButton({ href, icon, label, variant = 'primary', onClick }: ActionButtonProps) {
-  const baseClasses = "inline-flex items-center gap-2 px-6 py-3 rounded-xl transition-colors";
-  const variantClasses = variant === 'primary' 
-    ? "bg-[var(--eu-blue)] text-white hover:bg-[#2c4b99]" 
-    : "bg-[var(--eu-yellow)] text-[var(--eu-blue)] hover:bg-[#ffd700]";
+export default function ActionButton({
+  href,
+  icon,
+  label,
+  variant = 'primary',
+  onClick,
+}: ActionButtonProps) {
+  const baseClasses =
+    'inline-flex items-center gap-2 px-6 py-3 rounded-xl transition-colors';
+  const variantClasses =
+    variant === 'primary'
+      ? 'bg-[var(--eu-blue)] text-white hover:bg-[#2c4b99]'
+      : 'bg-[var(--eu-yellow)] text-[var(--eu-blue)] hover:bg-[#ffd700]';
 
   return (
     <Link
@@ -29,4 +36,4 @@ export default function ActionButton({ href, icon, label, variant = 'primary', o
       <span>{label}</span>
     </Link>
   );
-} 
+}

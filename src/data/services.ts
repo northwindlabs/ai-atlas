@@ -36,7 +36,8 @@ export const categories: Category[] = [
       },
       {
         name: 'HuggingChat',
-        description: 'Chat interface from Hugging Face to interact with open-source AI models',
+        description:
+          'Chat interface from Hugging Face to interact with open-source AI models',
         icon: '🤗',
         country: '🇫🇷',
         link: 'https://huggingface.co/chat/',
@@ -91,7 +92,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Localmind',
-        description: 'Secure on-premise AI for companies. Train custom AI with your data & automate processes with full control and privacy.',
+        description:
+          'Secure on-premise AI for companies. Train custom AI with your data & automate processes with full control and privacy.',
         icon: '🔒',
         country: '🇦🇹',
         link: 'https://www.localmind.ai',
@@ -152,15 +154,17 @@ export const categories: Category[] = [
         link: 'https://klang.ai',
       },
       {
-        name: "Schweizerdeutsch Übersetzer App",
-        description: "Swiss German audio and video transcription. Use mobile app for offline meetings & interviews or web app for online-talks!",
-        icon: "🐮",
-        country: "🇨🇭",
-        link: "https://schweizerdeutsch-uebersetzen.ch/",
+        name: 'Schweizerdeutsch Übersetzer App',
+        description:
+          'Swiss German audio and video transcription. Use mobile app for offline meetings & interviews or web app for online-talks!',
+        icon: '🐮',
+        country: '🇨🇭',
+        link: 'https://schweizerdeutsch-uebersetzen.ch/',
       },
       {
         name: 'Töggl',
-        description: 'Transcription service for all Swiss languages and dialects',
+        description:
+          'Transcription service for all Swiss languages and dialects',
         icon: '🎙️',
         country: '🇨🇭',
         link: 'https://töggl.ch',
@@ -297,7 +301,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Alugha',
-        description: 'Transcribe, translate, voiceover, and host your videos with AI',
+        description:
+          'Transcribe, translate, voiceover, and host your videos with AI',
         icon: '🎥',
         country: '🇩🇪',
         link: 'https://alugha.com',
@@ -430,7 +435,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Eden AI',
-        description: 'Unified API platform providing access to 100+ AI models. Includes monitoring tools and a workflow builder.',
+        description:
+          'Unified API platform providing access to 100+ AI models. Includes monitoring tools and a workflow builder.',
         icon: '⚡',
         country: '🇫🇷',
         link: 'https://www.edenai.co/',
@@ -475,7 +481,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Fair Text',
-        description: 'AI-powered simplification of complex German texts for clear and accessible communication',
+        description:
+          'AI-powered simplification of complex German texts for clear and accessible communication',
         icon: '📄',
         country: '🇩🇪',
         link: 'https://fair-text.com',
@@ -529,7 +536,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Acemate',
-        description: 'AI teaching platform that empowers universities to provide personalized learning at scale',
+        description:
+          'AI teaching platform that empowers universities to provide personalized learning at scale',
         icon: '🎓',
         country: '🇩🇪',
         link: 'https://www.acemate.ai/en/educators',
@@ -606,21 +614,24 @@ export const categories: Category[] = [
     services: [
       {
         name: 'KNOWRON',
-        description: 'AI assistant for industrial technicians providing instant access to manuals and troubleshooting guides',
+        description:
+          'AI assistant for industrial technicians providing instant access to manuals and troubleshooting guides',
         icon: '🔧',
         country: '🇩🇪',
         link: 'https://www.knowron.com/',
       },
       {
         name: 'Synthavo',
-        description: 'AI-powered visual identification of machine spare parts using smartphone photos',
+        description:
+          'AI-powered visual identification of machine spare parts using smartphone photos',
         icon: '📱',
         country: '🇩🇪',
         link: 'https://www.synthavo.de/en/',
       },
       {
         name: 'Bowatt',
-        description: 'AI platform for managing and analyzing customer specifications in industrial automation projects',
+        description:
+          'AI platform for managing and analyzing customer specifications in industrial automation projects',
         icon: '⚡',
         country: '🇩🇪',
         link: 'https://www.bowatt.com/',
@@ -635,7 +646,8 @@ export const categories: Category[] = [
     services: [
       {
         name: 'Neuroflash',
-        description: 'Create, personalize and optimize marketing content in one AI platform',
+        description:
+          'Create, personalize and optimize marketing content in one AI platform',
         icon: '✨',
         country: '🇩🇪',
         link: 'https://neuroflash.com/',
@@ -650,11 +662,12 @@ export const categories: Category[] = [
     services: [
       {
         name: 'Smart Calendars AI',
-        description: 'AI-powered calendar assistant that creates events from voice, photos, and text. Seamless integration across the Apple ecosystem.',
+        description:
+          'AI-powered calendar assistant that creates events from voice, photos, and text. Seamless integration across the Apple ecosystem.',
         icon: '📅',
         country: '🇩🇪',
-        link: 'https://www.smartcalendars.ai/'
-      }
-    ]
+        link: 'https://www.smartcalendars.ai/',
+      },
+    ],
   },
 ];
