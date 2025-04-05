@@ -15,8 +15,8 @@ export default function NewsletterSubscription() {
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-white mb-3">Stay Updated</h2>
             <p className="text-white/70">
-              Subscribe to our newsletter to receive updates about European
-              AI services and the AI Atlas project.
+              Subscribe to our newsletter to receive updates about European AI
+              services and the AI Atlas project.
             </p>
           </div>
 
