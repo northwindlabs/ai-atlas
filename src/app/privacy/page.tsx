@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
             <p className="mb-4">We collect data and process data when you:</p>
             <ul className="list-disc pl-6 mb-4">
               <li>Register on our website or subscribe to our newsletter</li>
-              <li>Browse our site.</li>
+              <li>Browse our site (anonymous data only).</li>
             </ul>
           </section>
 
@@ -61,8 +61,8 @@ export default function PrivacyPolicy() {
               How do we store your data?
             </h2>
             <p className="mb-4">
-              Our Company securely stores your data in a datacenter located in
-              Stockholm, Sweden, with encryption both in-transit and at rest.
+              Our Company securely stores your personal data on servers located in
+             the European Union.
             </p>
             <p className="mb-4">
               Our Company will keep your account/subscription data until you
