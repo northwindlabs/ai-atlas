@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
 import Script from 'next/script';
-import { headers } from 'next/headers'
+import { headers } from 'next/headers';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -16,16 +16,18 @@ const montserrat = Montserrat({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers()
-  const host = headersList.get('host') || 'aiatlas.eu'
+  const headersList = await headers();
+  const host = headersList.get('host') || 'aiatlas.eu';
 
   return {
     title: 'European AI Atlas',
-    description: 'Discover and explore European AI companies and services across different categories.',
+    description:
+      'Discover and explore European AI companies and services across different categories.',
     metadataBase: new URL(`https://${host}`),
     openGraph: {
       title: 'European AI Atlas',
-      description: 'Discover and explore European AI companies and services across different categories.',
+      description:
+        'Discover and explore European AI companies and services across different categories.',
       url: '/',
       siteName: 'European AI Atlas',
       images: [
@@ -47,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
         },
       ],
     },
-  }
+  };
 }
 
 export default function RootLayout({

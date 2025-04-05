@@ -5,33 +5,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { categories } from '../data/services';
 import { ServiceCard } from '../components/ServiceCard';
-
-
-const SuggestButton = () => (
-  <div className="flex flex-col items-center gap-4">
-    <a
-      href="https://github.com/northwindlabs/ai-atlas/issues/new?template=suggest-service.yml"
-      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-[var(--eu-blue)] rounded-md hover:bg-[#2c4b99] transition-colors"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span>Suggest a Service on GitHub</span>
-      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-      </svg>
-    </a>
-    <p className="text-sm text-gray-800 dark:text-gray-200">
-      No GitHub account? Suggest a service via email at{' '}
-      <a
-        href="mailto:contact@aiatlas.eu"
-        className="font-medium text-[var(--eu-blue)] dark:text-white/90 hover:underline"
-      >
-        contact@aiatlas.eu
-      </a>
-    </p>
-  </div>
-);
+import NewsletterSubscription from '../components/NewsletterSubscription';
+import ActionButton from '../components/ActionButton';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -183,9 +158,54 @@ export default function Home() {
               All services are categorized by their primary function, with
               country flags indicating company headquarters location.
             </p>
-            <div className="mt-6">
-              <SuggestButton />
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <ActionButton
+                href="https://github.com/northwindlabs/ai-atlas/issues/new?template=suggest-service.yml"
+                icon={
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                }
+                label="Add Service on GitHub"
+                variant="primary"
+              />
+              <ActionButton
+                href="#newsletter"
+                icon={
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                }
+                label="Subscribe to Updates"
+                variant="secondary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('#newsletter')?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                  });
+                }}
+              />
             </div>
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              No GitHub account? Suggest a service via email at{' '}
+              <a
+                href="mailto:contact@aiatlas.eu"
+                className="font-medium text-[var(--eu-blue)] dark:text-white/90 hover:underline"
+              >
+                contact@aiatlas.eu
+              </a>
+            </p>
           </section>
 
           {/* Categories */}
@@ -215,6 +235,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <NewsletterSubscription />
 
       {/* Footer */}
       <footer className="bg-[var(--eu-blue)] text-white py-8 px-4 md:px-8">
