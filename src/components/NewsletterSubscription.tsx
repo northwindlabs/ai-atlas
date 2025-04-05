@@ -3,7 +3,9 @@
 import { useState } from 'react';
 
 export default function NewsletterSubscription() {
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<
+    'idle' | 'loading' | 'success' | 'error'
+  >('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   return (
@@ -13,44 +15,54 @@ export default function NewsletterSubscription() {
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-white mb-3">Stay Updated</h2>
             <p className="text-white/70">
-              Subscribe to our newsletter to receive updates about new European AI services
+              Subscribe to our newsletter to receive updates about new European
+              AI services
             </p>
           </div>
-          
-          <form className="space-y-4" onSubmit={async (e) => {
-            e.preventDefault();
-            const form = e.target as HTMLFormElement;
-            const email = (form.elements.namedItem('email') as HTMLInputElement).value;
-            
-            setStatus('loading');
-            try {
-              const apiUrl = process.env.NEXT_PUBLIC_NEWSLETTER_API_URL;
-              if (!apiUrl) {
-                throw new Error('Newsletter subscription is not configured');
-              }
 
-              const response = await fetch(apiUrl, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                  email,
-                  lang: 'en'
-                })
-              });
-              
-              if (response.ok) {
-                setStatus('success');
-                form.reset();
-              } else {
-                throw new Error('Failed to subscribe');
+          <form
+            className="space-y-4"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = e.target as HTMLFormElement;
+              const email = (
+                form.elements.namedItem('email') as HTMLInputElement
+              ).value;
+
+              setStatus('loading');
+              try {
+                const apiUrl = process.env.NEXT_PUBLIC_NEWSLETTER_API_URL;
+                if (!apiUrl) {
+                  throw new Error('Newsletter subscription is not configured');
+                }
+
+                const response = await fetch(apiUrl, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                    email,
+                    lang: 'en',
+                  }),
+                });
+
+                if (response.ok) {
+                  setStatus('success');
+                  form.reset();
+                } else {
+                  throw new Error('Failed to subscribe');
+                }
+              } catch (error) {
+                setStatus('error');
+                setErrorMessage(
+                  error instanceof Error
+                    ? error.message
+                    : 'Sorry, there was an error. Please try again later.'
+                );
               }
-            } catch (error) {
-              setStatus('error');
-              setErrorMessage(error instanceof Error ? error.message : 'Sorry, there was an error. Please try again later.');
-            }
-          }}>
+            }}
+          >
             <div className="relative">
               <input
                 type="email"
@@ -61,7 +73,7 @@ export default function NewsletterSubscription() {
                 disabled={status === 'loading' || status === 'success'}
               />
             </div>
-            
+
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -105,4 +117,4 @@ export default function NewsletterSubscription() {
       </div>
     </section>
   );
-} 
+}
