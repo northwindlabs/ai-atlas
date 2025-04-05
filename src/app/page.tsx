@@ -237,6 +237,17 @@ export default function Home() {
             © {new Date().getFullYear()} AIAtlas • MIT Licensed • Contributions
             welcome
           </div>
+          <div className="mt-4 text-center text-sm text-white/60">
+            Maintained by{' '}
+            <a
+              href="https://www.linkedin.com/in/elinfritiofsson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--eu-yellow)] hover:underline"
+            >
+              Elin Fritiofsson
+            </a>
+          </div>
         </div>
       </footer>
     </div>
