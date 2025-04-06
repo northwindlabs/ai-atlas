@@ -7,9 +7,11 @@ import { categories } from '../data/services';
 import { ServiceCard } from '../components/ServiceCard';
 import NewsletterSubscription from '../components/NewsletterSubscription';
 import ActionButton from '../components/ActionButton';
+import { FilterSection } from '../components/FilterSection';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showNewOnly, setShowNewOnly] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -18,6 +20,21 @@ export default function Home() {
   const handleCategoryClick = () => {
     setMobileMenuOpen(false);
   };
+
+  // Filter categories to only show those with new services when showNewOnly is true
+  const filteredCategories = showNewOnly
+    ? categories.filter((category) =>
+        category.services.some((service) => {
+          if (!service.addedDate) return false;
+          const added = new Date(service.addedDate);
+          const today = new Date();
+          return (
+            added.getFullYear() === today.getFullYear() &&
+            added.getMonth() === today.getMonth()
+          );
+        })
+      )
+    : categories;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -125,7 +142,7 @@ export default function Home() {
               mobileMenuOpen ? 'grid py-2 px-4 md:px-0' : 'hidden'
             } md:grid md:py-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3`}
           >
-            {categories.map((category) => (
+            {filteredCategories.map((category) => (
               <a
                 key={category.id}
                 href={`#${category.id}`}
@@ -158,6 +175,7 @@ export default function Home() {
               All services are categorized by their primary function, with
               country flags indicating company headquarters location.
             </p>
+
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <ActionButton
                 href="https://github.com/northwindlabs/ai-atlas/issues/new?template=suggest-service.yml"
@@ -210,7 +228,13 @@ export default function Home() {
 
           {/* Categories */}
           <div className="space-y-4 px-4 md:px-8">
-            {categories.map((category) => (
+            <FilterSection
+              showNewOnly={showNewOnly}
+              setShowNewOnly={setShowNewOnly}
+              filteredCategories={filteredCategories}
+            />
+
+            {filteredCategories.map((category) => (
               <section
                 key={category.id}
                 id={category.id}
@@ -221,13 +245,24 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {category.services.map((service) => (
-                    <ServiceCard
-                      key={service.name}
-                      service={service}
-                      category={category}
-                    />
-                  ))}
+                  {category.services
+                    .filter((service) => {
+                      if (!showNewOnly) return true;
+                      if (!service.addedDate) return false;
+                      const added = new Date(service.addedDate);
+                      const today = new Date();
+                      return (
+                        added.getFullYear() === today.getFullYear() &&
+                        added.getMonth() === today.getMonth()
+                      );
+                    })
+                    .map((service) => (
+                      <ServiceCard
+                        key={service.name}
+                        service={service}
+                        category={category}
+                      />
+                    ))}
                 </div>
                 <div className="mt-8 border-b border-gray-200 dark:border-gray-800"></div>
               </section>

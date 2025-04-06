@@ -10,9 +10,23 @@ interface ServiceCardProps {
   category: Category;
 }
 
+// Helper function to check if a service is new (added in the current month)
+const isNewThisMonth = (addedDate?: string): boolean => {
+  if (!addedDate) return false;
+
+  const today = new Date();
+  const added = new Date(addedDate);
+
+  return (
+    added.getFullYear() === today.getFullYear() &&
+    added.getMonth() === today.getMonth()
+  );
+};
+
 export const ServiceCard = ({ service }: ServiceCardProps) => {
   const [showEmoji, setShowEmoji] = useState(true);
   const faviconUrl = getFaviconUrl(service.link);
+  const isNew = isNewThisMonth(service.addedDate);
 
   return (
     <Link
@@ -52,6 +66,11 @@ export const ServiceCard = ({ service }: ServiceCardProps) => {
               )}
             </div>
           </h3>
+          {isNew && (
+            <span className="inline-block mt-1 text-xs bg-[var(--eu-yellow)] text-[var(--eu-blue)] px-2 py-0.5 rounded-full font-medium">
+              Added this month
+            </span>
+          )}
         </div>
       </div>
       <p className="text-gray-600 dark:text-gray-400 flex-grow">
