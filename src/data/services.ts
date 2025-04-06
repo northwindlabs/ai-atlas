@@ -9,6 +9,7 @@ export interface Service {
   hq?: string;
   legal?: string;
   link: string;
+  addedDate?: string; // ISO date string when the service was added (YYYY-MM-DD)
 }
 
 export interface Category {
@@ -58,6 +59,15 @@ export const categories: Category[] = [
     icon: '🧠',
     color: 'bg-[#4CAF50]',
     services: [
+      {
+        name: 'SAP Joule Agents',
+        description:
+          'AI agents that help automate business processes and provide intelligent assistance across SAP applications',
+        icon: '🤖',
+        country: '🇩🇪',
+        link: 'https://www.sap.com/products/artificial-intelligence/ai-agents.html',
+        addedDate: '2025-04-06',
+      },
       {
         name: 'Frag Das PDF',
         description:
@@ -316,6 +326,15 @@ export const categories: Category[] = [
     color: 'bg-[#FF9800]',
     services: [
       {
+        name: 'Everseen',
+        description:
+          'Vision AI platform for retail with solutions for loss prevention, inventory management, and customer experience optimization',
+        icon: '👁️',
+        country: '🇮🇪',
+        link: 'https://everseen.ai/applications/',
+        addedDate: '2025-04-06',
+      },
+      {
         name: 'n8n',
         description:
           'Open-source workflow automation platform with AI capabilities for technical teams to build, run and iterate on workflows',
@@ -496,6 +515,15 @@ export const categories: Category[] = [
     color: 'bg-[#FF6B6B]',
     services: [
       {
+        name: 'Pladdra',
+        description:
+          'AI-powered education platform with age-specific preprompts, interactive lessons, personal prompt libraries & RAG.',
+        icon: '📚',
+        country: '🇸🇪',
+        link: 'https://pladdra.com/',
+        addedDate: '2025-04-06',
+      },
+      {
         name: 'Gradr',
         description:
           'A holistic educational AI solution for schools to generate exams, grade and analyze progress',
@@ -639,26 +667,36 @@ export const categories: Category[] = [
     ],
   },
   {
-    id: 'marketing',
-    name: 'Marketing',
-    icon: '📢',
-    color: 'bg-[#F06292]',
+    id: 'machine-learning',
+    name: 'Machine Learning',
+    icon: '🧮',
+    color: 'bg-[#9333EA]',
     services: [
       {
-        name: 'Neuroflash',
+        name: 'Apheris',
         description:
-          'Create, personalize and optimize marketing content in one AI platform',
-        icon: '✨',
+          'Enterprise platform for secure federated machine learning and analytics across distributed data sources without moving sensitive data.',
+        icon: '🔒',
         country: '🇩🇪',
-        link: 'https://neuroflash.com/',
+        link: 'https://www.apheris.com',
+        addedDate: '2025-04-06',
+      },
+      {
+        name: 'AI Verse',
+        description:
+          'Platform for creating high-quality annotated synthetic image datasets for training robust AI models.',
+        icon: '🎯',
+        country: '🇫🇷',
+        link: 'https://ai-verse.com',
+        addedDate: '2025-04-06',
       },
     ],
   },
   {
     id: 'productivity',
     name: 'Productivity',
-    icon: '📊',
-    color: 'bg-[#4CAF50]',
+    icon: '⚡',
+    color: 'bg-[#22C55E]',
     services: [
       {
         name: 'Smart Calendars AI',
@@ -667,6 +705,31 @@ export const categories: Category[] = [
         icon: '📅',
         country: '🇩🇪',
         link: 'https://www.smartcalendars.ai/',
+      },
+    ],
+  },
+  {
+    id: 'marketing',
+    name: 'Marketing',
+    icon: '📢',
+    color: 'bg-[#FF69B4]',
+    services: [
+      {
+        name: 'Retresco',
+        description:
+          'Empowers businesses to automate and optimize content workflows with AI — boosting efficiency and driving profitability',
+        icon: '📝',
+        country: '🇩🇪',
+        link: 'https://www.retresco.com',
+        addedDate: '2025-04-06',
+      },
+      {
+        name: 'Neuroflash',
+        description:
+          'Create, personalize and optimize marketing content in one AI platform',
+        icon: '✨',
+        country: '🇩🇪',
+        link: 'https://neuroflash.com/',
       },
     ],
   },
