@@ -587,7 +587,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Primi.ai',
-        description: 'Interview any demographic, anywhere, in any language — at scale. Primi.ai helps you uncover patterns, emotions, and insights from real conversations.',
+        description:
+          'Interview any demographic, anywhere, in any language — at scale. Primi.ai helps you uncover patterns, emotions, and insights from real conversations.',
         icon: '💬',
         country: '🇸🇪',
         link: 'https://primi.ai/',
