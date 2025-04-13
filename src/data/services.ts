@@ -585,6 +585,14 @@ export const categories: Category[] = [
         country: '🇸🇪',
         link: 'https://norna.ai',
       },
+      {
+        name: 'Primi.ai',
+        description:
+          'Interview any demographic, anywhere, in any language — at scale. Primi.ai helps you uncover patterns, emotions, and insights from real conversations.',
+        icon: '💬',
+        country: '🇸🇪',
+        link: 'https://primi.ai/',
+      },
     ],
   },
   {
