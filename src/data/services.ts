@@ -61,7 +61,8 @@ export const categories: Category[] = [
     services: [
       {
         name: 'Leexi',
-        description: 'AI-powered notetaking assistant. Recordings, summaries, next steps and more.',
+        description:
+          'AI-powered notetaking assistant. Recordings, summaries, next steps and more.',
         icon: '📝',
         country: '🇧🇪',
         link: 'https://leexi.ai',
