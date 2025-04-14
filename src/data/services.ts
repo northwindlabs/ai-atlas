@@ -60,6 +60,14 @@ export const categories: Category[] = [
     color: 'bg-[#4CAF50]',
     services: [
       {
+        name: 'Leexi',
+        description: 'AI-powered notetaking assistant. Recordings, summaries, next steps and more.',
+        icon: '📝',
+        country: '🇧🇪',
+        link: 'https://leexi.ai',
+        addedDate: '2025-04-14',
+      },
+      {
         name: 'SAP Joule Agents',
         description:
           'AI agents that help automate business processes and provide intelligent assistance across SAP applications',
@@ -430,6 +438,15 @@ export const categories: Category[] = [
         link: 'https://mistral.ai',
       },
       {
+        name: 'Berget AI',
+        description:
+          'Serverless and dedicated AI inference with self-hosting options. Includes an AI app deployment platform.',
+        icon: '☁️',
+        country: '🇸🇪',
+        link: 'https://berget.cloud',
+        addedDate: '2025-04-14',
+      },
+      {
         name: 'Nebius AI Studio',
         description:
           'Hosted inference platform for open-source LLMs and vision models with REST API and usage-based pricing',
@@ -591,6 +608,7 @@ export const categories: Category[] = [
           'Interview any demographic, anywhere, in any language — at scale. Primi.ai helps you uncover patterns, emotions, and insights from real conversations.',
         icon: '💬',
         country: '🇸🇪',
+        addedDate: '2025-04-14',
         link: 'https://primi.ai/',
       },
     ],

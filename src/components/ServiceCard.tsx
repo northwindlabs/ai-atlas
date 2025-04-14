@@ -25,6 +25,7 @@ const isNewThisMonth = (addedDate?: string): boolean => {
 
 export const ServiceCard = ({ service }: ServiceCardProps) => {
   const [showEmoji, setShowEmoji] = useState(true);
+  const [imageError, setImageError] = useState(false);
   const faviconUrl = getFaviconUrl(service.link);
   const isNew = isNewThisMonth(service.addedDate);
 
@@ -39,15 +40,21 @@ export const ServiceCard = ({ service }: ServiceCardProps) => {
         <div
           className={`w-12 h-12 bg-white rounded-lg flex items-center justify-center text-white text-2xl relative`}
         >
-          {faviconUrl && (
+          {faviconUrl && !imageError && (
             <Image
               src={faviconUrl}
               alt={`${service.name} favicon`}
               width={24}
               height={24}
               className="w-6 h-6 object-contain"
-              onError={() => setShowEmoji(true)}
-              onLoad={() => setShowEmoji(false)}
+              onError={() => {
+                setShowEmoji(true);
+                setImageError(true);
+              }}
+              onLoad={() => {
+                setShowEmoji(false);
+                setImageError(false);
+              }}
             />
           )}
           {showEmoji && <span>{service.icon}</span>}
