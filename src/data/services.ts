@@ -36,14 +36,6 @@ export const categories: Category[] = [
         link: 'https://mistral.ai/',
       },
       {
-        name: 'HuggingChat',
-        description:
-          'Chat interface from Hugging Face to interact with open-source AI models',
-        icon: '🤗',
-        country: '🇫🇷',
-        link: 'https://huggingface.co/chat/',
-      },
-      {
         name: 'LuzIA',
         description:
           'Multilingual AI chat assistant accessible via WhatsApp and Telegram',
