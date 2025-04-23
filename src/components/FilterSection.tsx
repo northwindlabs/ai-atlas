@@ -11,6 +11,22 @@ export const FilterSection = ({
   setShowNewOnly,
   filteredCategories,
 }: FilterSectionProps) => {
+  const isNewThisMonth = (date: Date) => {
+    const today = new Date();
+    const added = new Date(date);
+
+    // If the date is in the future, consider it new
+    if (added.getTime() > today.getTime()) {
+      return true;
+    }
+
+    // Otherwise, check if it's in the current month and year
+    return (
+      added.getFullYear() === today.getFullYear() &&
+      added.getMonth() === today.getMonth()
+    );
+  };
+
   return (
     <div className="mb-8">
       <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
@@ -48,12 +64,7 @@ export const FilterSection = ({
                   count +
                   category.services.filter((service) => {
                     if (!service.addedDate) return false;
-                    const added = new Date(service.addedDate);
-                    const today = new Date();
-                    return (
-                      added.getFullYear() === today.getFullYear() &&
-                      added.getMonth() === today.getMonth()
-                    );
+                    return isNewThisMonth(new Date(service.addedDate));
                   }).length,
                 0
               )}
