@@ -271,6 +271,14 @@ export const categories: Category[] = [
     color: 'bg-[#FF7F50]',
     services: [
       {
+        name: 'Lyric Video Studio',
+        description: 'Video editing desktop software that combines many AI services under one app, providing timeline for your prompts and keeps images and videos organized.',
+        icon: '🎥',
+        country: '🇫🇮',
+        link: 'https://lyricvideo.studio',
+        addedDate: '2025-05-01',
+      },
+      {
         name: 'Aive',
         description:
           'European AI video creation platform that transforms content into engaging videos with automated editing and optimization',
@@ -327,6 +335,14 @@ export const categories: Category[] = [
     color: 'bg-[#FF9800]',
     services: [
       {
+        name: 'Rossum',
+        description: 'AI Document Processing For Transactional Workflows',
+        icon: '📄',
+        country: '🇨🇿',
+        link: 'https://rossum.ai/',
+        addedDate: '2025-05-01',
+      },
+      {
         name: 'Everseen',
         description:
           'Vision AI platform for retail with solutions for loss prevention, inventory management, and customer experience optimization',
@@ -359,6 +375,14 @@ export const categories: Category[] = [
     icon: '🏢',
     color: 'bg-[#4361EE]',
     services: [
+      {
+        name: 'sipgate AI Assist',
+        description: 'sipgate AI is a fully featured, AI-powered phone system that automatically summarizes calls, identifies key topics, and generates actionable tasks to streamline business communication.',
+        icon: '📞',
+        country: '🇩🇪',
+        link: 'https://www.sipgate.de/assist',
+        addedDate: '2025-05-01',
+      },
       {
         name: 'Ebbot',
         description: 'AI chatbot platform for automated customer support',
@@ -479,6 +503,14 @@ export const categories: Category[] = [
     color: 'bg-[#45B7D1]',
     services: [
       {
+        name: 'Recombee',
+        description: 'AI powered recommender as a service',
+        icon: '🎯',
+        country: '🇨🇿',
+        link: 'https://www.recombee.com/',
+        addedDate: '2025-05-01',
+      },
+      {
         name: 'Rek.ai',
         description: 'AI-driven website content personalization engine',
         icon: '🤖',
@@ -524,6 +556,14 @@ export const categories: Category[] = [
     icon: '📚',
     color: 'bg-[#FF6B6B]',
     services: [
+      {
+        name: 'TRIADE-COPILOT',
+        description: 'TRIADE-COPILOT is an AI assistant for schools that simplifies time-consuming tasks for teachers and enhance student learning at home.',
+        icon: '🤖',
+        country: '🇫🇷',
+        link: 'https://triade-educ.org/fr/',
+        addedDate: '2025-05-01',
+      },
       {
         name: 'Pladdra',
         description:
