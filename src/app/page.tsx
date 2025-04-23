@@ -28,6 +28,8 @@ export default function Home() {
           if (!service.addedDate) return false;
           const added = new Date(service.addedDate);
           const today = new Date();
+          // Consider future dates as new
+          if (added > today) return true;
           return (
             added.getFullYear() === today.getFullYear() &&
             added.getMonth() === today.getMonth()
@@ -251,6 +253,8 @@ export default function Home() {
                       if (!service.addedDate) return false;
                       const added = new Date(service.addedDate);
                       const today = new Date();
+                      // Consider future dates as new
+                      if (added > today) return true;
                       return (
                         added.getFullYear() === today.getFullYear() &&
                         added.getMonth() === today.getMonth()

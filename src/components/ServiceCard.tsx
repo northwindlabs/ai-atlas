@@ -17,6 +17,9 @@ const isNewThisMonth = (addedDate?: string): boolean => {
   const today = new Date();
   const added = new Date(addedDate);
 
+  // Consider future dates as new
+  if (added > today) return true;
+
   return (
     added.getFullYear() === today.getFullYear() &&
     added.getMonth() === today.getMonth()
