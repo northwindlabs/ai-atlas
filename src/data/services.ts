@@ -272,7 +272,8 @@ export const categories: Category[] = [
     services: [
       {
         name: 'Lyric Video Studio',
-        description: 'Video editing desktop software that combines many AI services under one app, providing timeline for your prompts and keeps images and videos organized.',
+        description:
+          'Video editing desktop software that combines many AI services under one app, providing timeline for your prompts and keeps images and videos organized.',
         icon: '🎥',
         country: '🇫🇮',
         link: 'https://lyricvideo.studio',
@@ -377,7 +378,8 @@ export const categories: Category[] = [
     services: [
       {
         name: 'sipgate AI Assist',
-        description: 'sipgate AI is a fully featured, AI-powered phone system that automatically summarizes calls, identifies key topics, and generates actionable tasks to streamline business communication.',
+        description:
+          'sipgate AI is a fully featured, AI-powered phone system that automatically summarizes calls, identifies key topics, and generates actionable tasks to streamline business communication.',
         icon: '📞',
         country: '🇩🇪',
         link: 'https://www.sipgate.de/assist',
@@ -558,7 +560,8 @@ export const categories: Category[] = [
     services: [
       {
         name: 'TRIADE-COPILOT',
-        description: 'TRIADE-COPILOT is an AI assistant for schools that simplifies time-consuming tasks for teachers and enhance student learning at home.',
+        description:
+          'TRIADE-COPILOT is an AI assistant for schools that simplifies time-consuming tasks for teachers and enhance student learning at home.',
         icon: '🤖',
         country: '🇫🇷',
         link: 'https://triade-educ.org/fr/',
