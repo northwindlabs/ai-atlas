@@ -623,6 +623,15 @@ export const categories: Category[] = [
         country: '🇩🇪',
         link: 'https://www.acemate.ai/en/educators',
       },
+      {
+  name: 'Intellipaper.ai',
+  description:
+    'AI study assistant to chat with documents, summarize & translate content, and search 200M+ papers — all in one app.',
+  icon: '📑',
+  country: '🇦🇹',
+  link: 'https://intellipaper.ai/',
+  addedDate: '2025-05-05',
+},
     ],
   },
   {
