@@ -94,20 +94,30 @@ export const categories: Category[] = [
         link: 'https://lighton.ai',
       },
       {
-        name: 'Branding5',
-        description:
-          'AI-powered branding tool that helps businesses define their brand identity and develop effective marketing strategies',
-        icon: '🚀',
-        country: '🇦🇹',
-        link: 'https://branding5.com/',
-      },
-      {
         name: 'Localmind',
         description:
           'Secure on-premise AI for companies. Train custom AI with your data & automate processes with full control and privacy.',
         icon: '🔒',
         country: '🇦🇹',
         link: 'https://www.localmind.ai',
+      },
+      {
+        name: 'tl;dv',
+        description:
+          'AI meeting assistant that summarizes meetings, writes follow-ups and syncs with CRM',
+        icon: '🎥',
+        country: '🇩🇪',
+        link: 'https://tldv.io/',
+        addedDate: '2025-05-11',
+      },
+      {
+        name: 'HALO AI',
+        description:
+          'AI platform offering specialized agents for customer service, marketing automation, and operational tasks',
+        icon: '🤖',
+        country: '🇳🇱',
+        link: 'https://www.cm.com/halo/',
+        addedDate: '2025-05-11',
       },
     ],
   },
@@ -623,6 +633,15 @@ export const categories: Category[] = [
         country: '🇩🇪',
         link: 'https://www.acemate.ai/en/educators',
       },
+      {
+        name: 'Intellipaper.ai',
+        description:
+          'AI study assistant to chat with documents, summarize & translate content, and search 200M+ papers — all in one app.',
+        icon: '📑',
+        country: '🇦🇹',
+        link: 'https://intellipaper.ai/',
+        addedDate: '2025-05-05',
+      },
     ],
   },
   {
@@ -792,6 +811,48 @@ export const categories: Category[] = [
         icon: '✨',
         country: '🇩🇪',
         link: 'https://neuroflash.com/',
+      },
+      {
+        name: 'Branding5',
+        description:
+          'AI-powered branding tool that helps businesses define their brand identity and develop effective marketing strategies',
+        icon: '🚀',
+        country: '🇦🇹',
+        link: 'https://branding5.com/',
+      },
+    ],
+  },
+  {
+    id: 'retrieval',
+    name: 'Retrieval',
+    icon: '🔍',
+    color: 'bg-[#10B981]',
+    services: [
+      {
+        name: 'Spykio',
+        description:
+          'Advanced RAG provider with contextual understanding technology for precise information retrieval',
+        icon: '🔍',
+        country: '🇧🇪',
+        link: 'https://spyk.io',
+        addedDate: '2025-05-11',
+      },
+    ],
+  },
+  {
+    id: 'healthcare',
+    name: 'Healthcare',
+    icon: '🏥',
+    color: 'bg-[#EC4899]',
+    services: [
+      {
+        name: 'Vesalius.ai',
+        description:
+          'AI assistant for healthcare providers that streamlines patient intake, consultation, and documentation',
+        icon: '👨‍⚕️',
+        country: '🇧🇪',
+        link: 'https://www.vesalius.ai/',
+        addedDate: '2025-05-11',
       },
     ],
   },
