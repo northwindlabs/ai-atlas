@@ -50,4 +50,4 @@ export const BackToTopButton = () => {
       <span className="hidden sm:inline">Back to Categories</span>
     </button>
   );
-}; 
+};
