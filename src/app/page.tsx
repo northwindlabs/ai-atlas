@@ -8,6 +8,7 @@ import { ServiceCard } from '../components/ServiceCard';
 import NewsletterSubscription from '../components/NewsletterSubscription';
 import ActionButton from '../components/ActionButton';
 import { FilterSection } from '../components/FilterSection';
+import { BackToTopButton } from '../components/BackToTopButton';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -93,7 +94,7 @@ export default function Home() {
       </header>
 
       {/* Category Navigation */}
-      <nav className="bg-[var(--eu-blue)] text-white py-2 sticky top-0 z-10 shadow-md">
+      <nav className="bg-[var(--eu-blue)] text-white py-2 z-10 shadow-md">
         <div className="max-w-7xl mx-auto px-0 md:px-0">
           {/* Mobile Hamburger Button */}
           <div className="md:hidden flex justify-between items-center py-2 px-4">
@@ -161,8 +162,9 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 py-12 px-0 md:px-0 bg-gradient-to-b from-white to-gray-100 dark:from-[#0a0a0a] dark:to-[#121212]">
-        <div className="max-w-7xl mx-auto space-y-12">
+      <main className="flex-1">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <BackToTopButton />
           {/* Welcome Message */}
           <section className="text-center max-w-3xl mx-auto mb-8 px-4 md:px-8">
             <h2 className="text-3xl font-bold mb-4">
