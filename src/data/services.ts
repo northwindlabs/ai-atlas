@@ -43,6 +43,14 @@ export const categories: Category[] = [
         country: '🇪🇸',
         link: 'https://www.luzia.com',
       },
+      {
+        name: 'Omnifact',
+        description: 'Privacy-first generative AI chat platform for businesses with GDPR compliance and on-premise options',
+        icon: '🔒',
+        country: '🇩🇪',
+        link: 'https://omnifact.ai/',
+        addedDate: '2025-06-01',
+      },
     ],
   },
   {
