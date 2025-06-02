@@ -119,6 +119,15 @@ export const categories: Category[] = [
         link: 'https://www.cm.com/halo/',
         addedDate: '2025-05-11',
       },
+      {
+        name: 'TextCortex',
+        description:
+          'Enterprise platform for creating custom AI agents that connect with company data and handle complex tasks using your knowledge base',
+        icon: '🤖',
+        country: '🇩🇪',
+        link: 'https://textcortex.com/',
+        addedDate: '2025-06-01',
+      },
     ],
   },
   {
