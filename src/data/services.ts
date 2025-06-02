@@ -45,7 +45,8 @@ export const categories: Category[] = [
       },
       {
         name: 'Omnifact',
-        description: 'Privacy-first generative AI chat platform for businesses with GDPR compliance and on-premise options',
+        description:
+          'Privacy-first generative AI chat platform for businesses with GDPR compliance and on-premise options',
         icon: '🔒',
         country: '🇩🇪',
         link: 'https://omnifact.ai/',
