@@ -43,6 +43,14 @@ export const categories: Category[] = [
         country: '🇪🇸',
         link: 'https://www.luzia.com',
       },
+      {
+        name: 'IA tools - Infomaniak',
+        description:
+          'Infomaniak is a hosting provider that offers a range of AI tools, including an AI chatbot, a text-to-speech service and image generation.',
+        icon: '💬',
+        country: '🇨🇭',
+        link: 'https://www.infomaniak.com/en/hosting/ai-tools',
+      },
     ],
   },
   {
@@ -721,6 +729,14 @@ export const categories: Category[] = [
         icon: '🤖',
         country: '🇩🇪',
         link: 'https://www.ellamind.com',
+      },
+      {
+        name: 'IA tools - Infomaniak',
+        description:
+          'Provides API acces to open-source models (LLMs, embeddings, image generation, speech-to-text)',
+        icon: '💬',
+        country: '🇨🇭',
+        link: 'https://www.infomaniak.com/en/hosting/ai-tools',
       },
     ],
   },
