@@ -211,7 +211,7 @@ export const categories: Category[] = [
       {
         name: 'Good Tape',
         description:
-          'Copenhagen-based AI transcription tool turning audio and video to text in 100+ languages with GDPR‑compliant EU storage and high-grade privacy.',
+          'Fast, secure, accurate, and GDPR-compliant AI transcription tool based in Copenhagen',
         icon: '🎙️',
         country: '🇩🇰',
         link: 'https://goodtape.io',
