@@ -208,6 +208,15 @@ export const categories: Category[] = [
         country: '🇨🇭',
         link: 'https://töggl.ch',
       },
+      {
+        name: 'Good Tape',
+        description:
+          'Copenhagen-based AI transcription tool turning audio and video to text in 100+ languages with GDPR‑compliant EU storage and high-grade privacy.',
+        icon: '🎙️',
+        country: '🇩🇰',
+        link: 'https://goodtape.io',
+        addedDate: '2025-06-11',
+      },
     ],
   },
   {
