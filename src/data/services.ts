@@ -50,6 +50,25 @@ export const categories: Category[] = [
         icon: '💬',
         country: '🇨🇭',
         link: 'https://www.infomaniak.com/en/hosting/ai-tools',
+        addedDate: '2025-07-01',
+      },
+      {
+        name: 'Omnifact',
+        description:
+          'Privacy-first generative AI chat platform for businesses with GDPR compliance and on-premise options',
+        icon: '🔒',
+        country: '🇩🇪',
+        link: 'https://omnifact.ai/',
+        addedDate: '2025-06-01',
+      },
+      {
+        name: 'Employee GPT',
+        description:
+          'Swiss-hosted GDPR-compliant ChatGPT alternative. Personalized for your company.',
+        icon: '🏢',
+        country: '🇨🇭',
+        link: 'https://www.connectai.ch/employee-gpt',
+        addedDate: '2025-07-01',
       },
     ],
   },
@@ -59,6 +78,15 @@ export const categories: Category[] = [
     icon: '🧠',
     color: 'bg-[#4CAF50]',
     services: [
+      {
+        name: 'ConnectAI',
+        description:
+          'Sales and customer support assistant using RAG and multi-agent architecture for telecom companies',
+        icon: '📞',
+        country: '🇨🇭',
+        link: 'https://connectai.ch',
+        addedDate: '2025-07-01',
+      },
       {
         name: 'Leexi',
         description:
@@ -126,6 +154,15 @@ export const categories: Category[] = [
         country: '🇳🇱',
         link: 'https://www.cm.com/halo/',
         addedDate: '2025-05-11',
+      },
+      {
+        name: 'TextCortex',
+        description:
+          'Enterprise platform for creating custom AI agents that connect with company data and handle complex tasks using your knowledge base',
+        icon: '🤖',
+        country: '🇩🇪',
+        link: 'https://textcortex.com/',
+        addedDate: '2025-06-01',
       },
     ],
   },
@@ -552,6 +589,15 @@ export const categories: Category[] = [
     icon: '🌐',
     color: 'bg-[#4A90E2]',
     services: [
+      {
+        name: 'Lingvanex',
+        description:
+          'On-premise machine translation, translation API and speech recognition with 100+ languages',
+        icon: '🌍',
+        country: '🇨🇾',
+        link: 'https://lingvanex.com/',
+        addedDate: '2025-07-01',
+      },
       {
         name: 'DeepL',
         description:
