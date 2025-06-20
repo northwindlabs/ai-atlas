@@ -52,6 +52,15 @@ export const categories: Category[] = [
         link: 'https://omnifact.ai/',
         addedDate: '2025-06-01',
       },
+      {
+        name: 'Employee GPT',
+        description:
+          'Swiss-hosted GDPR-compliant ChatGPT alternative. Personalized for your company.',
+        icon: '🏢',
+        country: '🇨🇭',
+        link: 'https://www.connectai.ch/employee-gpt',
+        addedDate: '2025-07-01',
+      },
     ],
   },
   {
@@ -60,6 +69,15 @@ export const categories: Category[] = [
     icon: '🧠',
     color: 'bg-[#4CAF50]',
     services: [
+      {
+        name: 'ConnectAI',
+        description:
+          'Sales and customer support assistant using RAG and multi-agent architecture for telecom companies',
+        icon: '📞',
+        country: '🇨🇭',
+        link: 'https://connectai.ch',
+        addedDate: '2025-07-01',
+      },
       {
         name: 'Leexi',
         description:
@@ -562,6 +580,15 @@ export const categories: Category[] = [
     icon: '🌐',
     color: 'bg-[#4A90E2]',
     services: [
+      {
+        name: 'Lingvanex',
+        description:
+          'On-premise machine translation, translation API and speech recognition with 100+ languages',
+        icon: '🌍',
+        country: '🇨🇾',
+        link: 'https://lingvanex.com/',
+        addedDate: '2025-07-01',
+      },
       {
         name: 'DeepL',
         description:
