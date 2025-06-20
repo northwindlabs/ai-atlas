@@ -563,6 +563,15 @@ export const categories: Category[] = [
     color: 'bg-[#4A90E2]',
     services: [
       {
+        name: 'Lingvanex',
+        description:
+          'On-premise machine translation, translation API and speech recognition with 100+ languages',
+        icon: '🌍',
+        country: '🇨🇾',
+        link: 'https://lingvanex.com/',
+        addedDate: '2025-07-01',
+      },
+      {
         name: 'DeepL',
         description:
           'AI-powered translation with human-like accuracy and fluency',
