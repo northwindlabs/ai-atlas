@@ -44,6 +44,15 @@ export const categories: Category[] = [
         link: 'https://www.luzia.com',
       },
       {
+        name: 'IA tools - Infomaniak',
+        description:
+          'Infomaniak is a hosting provider that offers a range of AI tools, including an AI chatbot, a text-to-speech service and image generation.',
+        icon: '💬',
+        country: '🇨🇭',
+        link: 'https://www.infomaniak.com/en/hosting/ai-tools',
+        addedDate: '2025-07-01',
+      },
+      {
         name: 'Omnifact',
         description:
           'Privacy-first generative AI chat platform for businesses with GDPR compliance and on-premise options',
@@ -51,6 +60,15 @@ export const categories: Category[] = [
         country: '🇩🇪',
         link: 'https://omnifact.ai/',
         addedDate: '2025-06-01',
+      },
+      {
+        name: 'Employee GPT',
+        description:
+          'Swiss-hosted GDPR-compliant ChatGPT alternative. Personalized for your company.',
+        icon: '🏢',
+        country: '🇨🇭',
+        link: 'https://www.connectai.ch/employee-gpt',
+        addedDate: '2025-07-01',
       },
     ],
   },
@@ -60,6 +78,15 @@ export const categories: Category[] = [
     icon: '🧠',
     color: 'bg-[#4CAF50]',
     services: [
+      {
+        name: 'ConnectAI',
+        description:
+          'Sales and customer support assistant using RAG and multi-agent architecture for telecom companies',
+        icon: '📞',
+        country: '🇨🇭',
+        link: 'https://connectai.ch',
+        addedDate: '2025-07-01',
+      },
       {
         name: 'Leexi',
         description:
@@ -207,6 +234,15 @@ export const categories: Category[] = [
         icon: '🎙️',
         country: '🇨🇭',
         link: 'https://töggl.ch',
+      },
+      {
+        name: 'Good Tape',
+        description:
+          'Fast, secure, accurate, and GDPR-compliant AI transcription tool based in Copenhagen',
+        icon: '🎙️',
+        country: '🇩🇰',
+        link: 'https://goodtape.io',
+        addedDate: '2025-07-01',
       },
     ],
   },
@@ -563,6 +599,15 @@ export const categories: Category[] = [
     color: 'bg-[#4A90E2]',
     services: [
       {
+        name: 'Lingvanex',
+        description:
+          'On-premise machine translation, translation API and speech recognition with 100+ languages',
+        icon: '🌍',
+        country: '🇨🇾',
+        link: 'https://lingvanex.com/',
+        addedDate: '2025-07-01',
+      },
+      {
         name: 'DeepL',
         description:
           'AI-powered translation with human-like accuracy and fluency',
@@ -730,6 +775,15 @@ export const categories: Category[] = [
         icon: '🤖',
         country: '🇩🇪',
         link: 'https://www.ellamind.com',
+      },
+      {
+        name: 'IA tools - Infomaniak',
+        description:
+          'Provides API acces to open-source models (LLMs, embeddings, image generation, speech-to-text)',
+        icon: '💬',
+        country: '🇨🇭',
+        link: 'https://www.infomaniak.com/en/hosting/ai-tools',
+        addedDate: '2025-07-01',
       },
     ],
   },
