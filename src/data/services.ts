@@ -705,6 +705,15 @@ export const categories: Category[] = [
         link: 'https://intellipaper.ai/',
         addedDate: '2025-05-05',
       },
+      {
+        name: 'Talents.Kids',
+        description:
+          'AI-powered child talent discovery platform using 25+ specialized agents to analyze talents across 9 intelligence types',
+        icon: '🧒',
+        country: '🇵🇹',
+        link: 'https://www.talents.kids',
+        addedDate: '2025-09-01',
+      },
     ],
   },
   {
