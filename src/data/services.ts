@@ -715,6 +715,15 @@ export const categories: Category[] = [
         addedDate: '2025-05-05',
       },
       {
+        name: 'Careertrainer.ai',
+        description:
+          'AI role-playing scenarios for leadership training with live audio dialogues and personalized coaching feedback',
+        icon: '👥',
+        country: '🇩🇪',
+        link: 'https://careertrainer.ai',
+        addedDate: '2025-09-01',
+      },
+      {
         name: 'Talents.Kids',
         description:
           'AI-powered child talent discovery platform using 25+ specialized agents to analyze talents across 9 intelligence types',
