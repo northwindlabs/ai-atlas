@@ -712,7 +712,7 @@ export const categories: Category[] = [
         icon: '🧒',
         country: '🇵🇹',
         link: 'https://www.talents.kids',
-        addedDate: '2025-01-31',
+        addedDate: '2025-09-01',
       },
     ],
   },
