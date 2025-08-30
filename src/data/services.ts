@@ -70,6 +70,15 @@ export const categories: Category[] = [
         link: 'https://www.connectai.ch/employee-gpt',
         addedDate: '2025-07-01',
       },
+      {
+        name: 'aineo',
+        description:
+          'Swiss AI interface built for organisations. Your data does not leave Switzerland and is not processed by non-Swiss entities.',
+        icon: '💬',
+        country: '🇨🇭',
+        link: 'https://www.aineo.swiss',
+        addedDate: '2025-09-01',
+      },
     ],
   },
   {
@@ -704,6 +713,24 @@ export const categories: Category[] = [
         country: '🇦🇹',
         link: 'https://intellipaper.ai/',
         addedDate: '2025-05-05',
+      },
+      {
+        name: 'Careertrainer.ai',
+        description:
+          'AI role-playing scenarios for leadership training with live audio dialogues and personalized coaching feedback',
+        icon: '👥',
+        country: '🇩🇪',
+        link: 'https://careertrainer.ai',
+        addedDate: '2025-09-01',
+      },
+      {
+        name: 'Talents.Kids',
+        description:
+          'AI-powered child talent discovery platform using 25+ specialized agents to analyze talents across 9 intelligence types',
+        icon: '🧒',
+        country: '🇵🇹',
+        link: 'https://www.talents.kids',
+        addedDate: '2025-09-01',
       },
     ],
   },
