@@ -712,7 +712,7 @@ export const categories: Category[] = [
         icon: '👥',
         country: '🇩🇪',
         link: 'https://careertrainer.ai',
-        addedDate: '2025-08-30',
+        addedDate: '2025-09-01',
       },
     ],
   },
