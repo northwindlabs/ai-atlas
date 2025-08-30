@@ -705,6 +705,15 @@ export const categories: Category[] = [
         link: 'https://intellipaper.ai/',
         addedDate: '2025-05-05',
       },
+      {
+        name: 'Careertrainer.ai',
+        description:
+          'AI role-playing scenarios for leadership training with live audio dialogues and personalized coaching feedback',
+        icon: '👥',
+        country: '🇩🇪',
+        link: 'https://careertrainer.ai',
+        addedDate: '2025-08-30',
+      },
     ],
   },
   {
