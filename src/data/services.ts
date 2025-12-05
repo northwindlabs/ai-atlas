@@ -139,14 +139,6 @@ export const categories: Category[] = [
         link: 'https://lighton.ai',
       },
       {
-        name: 'Localmind',
-        description:
-          'Secure on-premise AI for companies. Train custom AI with your data & automate processes with full control and privacy.',
-        icon: '🔒',
-        country: '🇦🇹',
-        link: 'https://www.localmind.ai',
-      },
-      {
         name: 'tl;dv',
         description:
           'AI meeting assistant that summarizes meetings, writes follow-ups and syncs with CRM',
