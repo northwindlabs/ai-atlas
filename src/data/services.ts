@@ -569,6 +569,15 @@ export const categories: Category[] = [
         country: '🇫🇷',
         link: 'https://www.edenai.co/',
       },
+      {
+        name: 'EUrouter',
+        description:
+          'OpenAI-compatible AI gateway for EU customers. Routes requests to 10+ providers with built-in EU data residency, GDPR compliance, and zero-data-retention controls.',
+        icon: '🇪🇺',
+        country: '🇪🇺',
+        link: 'https://eurouter.ai',
+        addedDate: '2026-02-20',
+      },
     ],
   },
   {
