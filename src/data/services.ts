@@ -732,6 +732,15 @@ export const categories: Category[] = [
         link: 'https://www.talents.kids',
         addedDate: '2025-09-01',
       },
+      {
+        name: 'SchlummerMärchen',
+        description:
+          'AI-generated personalized bedtime stories for children with professional voice narration',
+        icon: '🌙',
+        country: '🇩🇪',
+        link: 'https://schlummermaerchen.de',
+        addedDate: '2026-03-19',
+      },
     ],
   },
   {
