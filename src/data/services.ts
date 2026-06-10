@@ -79,6 +79,15 @@ export const categories: Category[] = [
         link: 'https://www.aineo.swiss',
         addedDate: '2025-09-01',
       },
+      {
+        name: 'LLMBase',
+        description:
+          'European sovereign ChatGPT alternative with private chat, open-source models, and OpenAI-compatible access for agents',
+        icon: '🛡️',
+        country: '🇩🇪',
+        link: 'https://llmbase.ai',
+        addedDate: '2026-06-10',
+      },
     ],
   },
   {
