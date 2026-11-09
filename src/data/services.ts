@@ -569,6 +569,14 @@ export const categories: Category[] = [
         country: '🇫🇷',
         link: 'https://www.edenai.co/',
       },
+      {
+        name: 'LLMBase',
+        description:
+          'OpenAI-compatible Inference API with 9 open-weight models, EU inference, and a business DPA — German company.',
+        icon: '🔌',
+        country: '🇩🇪',
+        link: 'https://llmbase.ai/services/inference/',
+      },
     ],
   },
   {
