@@ -569,6 +569,15 @@ export const categories: Category[] = [
         country: '🇫🇷',
         link: 'https://www.edenai.co/',
       },
+      {
+        name: 'Løynd',
+        description:
+          'OpenAI-compatible AI inference API from Norway. Open-weight models, zero data retention, no training, inference strictly in Norway and EU.',
+        icon: '🔒',
+        country: '🇳🇴',
+        link: 'https://loynd.no/',
+        addedDate: '2026-11-25',
+      },
     ],
   },
   {
